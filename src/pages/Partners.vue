@@ -5,21 +5,21 @@
       <!-- Safarcom -->
       <slide>
         <div class="partner-logo">
-          <img src="../assets/images/NHIF.PNG" alt="Safarcom" />
+          <img src="../assets/images/agm.jpg" alt="Safarcom" />
         </div>
       </slide>
 
       <!-- NHIF -->
       <slide>
         <div class="partner-logo">
-          <img src="../assets/images/nssf.PNG" alt="NHIF" />
+          <img src="../assets/images/agm.jpg" alt="NHIF" />
         </div>
       </slide>
 
       <!-- NSSF -->
       <slide>
         <div class="partner-logo">
-          <img src="../assets/images/KRA.PNG" alt="NSSF" />
+          <img src="../assets/images/agm.jpg" alt="NSSF" />
         </div>
       </slide>
     </carousel>
