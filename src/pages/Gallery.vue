@@ -1,56 +1,13 @@
 <template>
   <div class="bg-gray-100 p-4">
-    <h1 class="text-3xl font-semibold mb-4">Biblia Gallery</h1>
+    <h1 class="text-4xl font-bold text-center mb-8">Biblia Gallery</h1>
 
-    <h2 class="text-xl font-semibold">2021 AGM Photos</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-      <div>
-        <img src="../assets/images/agm.jpg" alt="2021 AGM Photo 1" class="rounded-lg" />
-      </div>
-      <div>
-        <img src="../assets/images/agm.jpg" alt="2021 AGM Photo 2" class="rounded-lg" />
-      </div>
-      <div>
-        <img src="../assets/images/agm.jpg" alt="2021 AGM Photo 3" class="rounded-lg" />
-      </div>
-    </div>
-
-    <h2 class="text-xl font-semibold mt-6">2022 AGM Photos</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-      <div>
-        <img src="../assets/images/agm.jpg" alt="2022 AGM Photo 1" class="rounded-lg" />
-      </div>
-      <div>
-        <img src="../assets/images/agm.jpg" alt="2022 AGM Photo 2" class="rounded-lg" />
-      </div>
-      <div>
-        <img src="../assets/images/agm.jpg" alt="2022 AGM Photo 3" class="rounded-lg" />
-      </div>
-    </div>
-
-    <h2 class="text-xl font-semibold mt-6">2023 AGM Photos</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-      <div>
-        <img src="../assets/images/agm.jpg" alt="2023 AGM Photo 1" class="rounded-lg" />
-      </div>
-      <div>
-        <img src="../assets/images/agm.jpg" alt="2023 AGM Photo 2" class="rounded-lg" />
-      </div>
-      <div>
-        <img src="../assets/images/agm.jpg" alt="2023 AGM Photo 3" class="rounded-lg" />
-      </div>
-    </div>
-
-    <h2 class="text-xl font-semibold mt-6">BOD Member Retreat 2023</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-      <div>
-        <img src="../assets/images/agm.jpg" alt="BOD Member Retreat 2023 Photo 1" class="rounded-lg" />
-      </div>
-      <div>
-        <img src="../assets/images/agm.jpg" alt="BOD Member Retreat 2023 Photo 2" class="rounded-lg" />
-      </div>
-      <div>
-        <img src="../assets/images/agm.jpg" alt="BOD Member Retreat 2023 Photo 3" class="rounded-lg" />
+    <div v-for="(album, index) in albums" :key="index" class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">{{ album.title }}</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div v-for="photo in album.photos" :key="photo.id" class="rounded-lg overflow-hidden">
+          <img :src="photo.src" :alt="photo.alt" class="w-full h-auto" />
+        </div>
       </div>
     </div>
   </div>
@@ -59,9 +16,47 @@
 <script>
 export default {
   name: 'BibliaGallery',
+  data() {
+    return {
+      albums: [
+        {
+          title: '2021 AGM Photos',
+          photos: [
+            { id: 1, src: '../assets/images/agm1.jpg', alt: 'Photo 1' },
+            { id: 2, src: '../assets/images/agm2.jpg', alt: 'Photo 2' },
+            { id: 3, src: '../assets/images/agm3.jpg', alt: 'Photo 3' },
+          ],
+        },
+        // Add other albums and photos here
+      ],
+    };
+  },
 };
 </script>
 
 <style scoped>
-/* Add any custom styling here */
+/* Add Tailwind CSS classes and custom styles here */
+
+/* Style the image containers */
+.rounded-lg {
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the images to maintain aspect ratio */
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* Style the section headers */
+h2 {
+  color: #1a202c;
+}
+
+/* Center the page title */
+h1 {
+  text-align: center;
+}
 </style>
