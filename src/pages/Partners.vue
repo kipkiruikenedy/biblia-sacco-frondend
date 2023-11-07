@@ -15,6 +15,7 @@
         <img src="../assets/images/cooperative ministry.png" alt="Sample 2">
         <img src="../assets/images/nssf.png" alt="Sample 3">
         <img src="../assets/images/NHIF.png" alt="Sample 4">
+        <img src="../assets/images/KRA.png" alt="Sample 2">
         </div>
       </SplideSlide>
     </Splide>
