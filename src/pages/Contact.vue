@@ -5,9 +5,9 @@
         <i class="fas fa-stopwatch"></i> DON’T WAIT
       </div>
       <p class="text-xl mb-6">Contact Us For A Free Consult</p>
-      <button class="bg-yellow-300 text-blue-600 font-semibold py-2 px-6 rounded-lg shadow-lg hover:shadow-xl">
+      <a href="http://localhost:5174/contact" class="bg-yellow-300 text-blue-600 font-semibold py-2 px-6 rounded-lg shadow-lg hover:shadow-xl">
         <i class="fas fa-check-circle"></i> I’m Ready
-      </button>
+      </a>
     </div>
   </div>
 </template>

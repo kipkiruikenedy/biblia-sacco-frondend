@@ -1,11 +1,10 @@
 <template>
   <div>
- <p>carausal</p>
-    <div class="button-container">
-      <button class="portal-button">
+    <div class="button-container mt-8">
+      <a href="https://portal.bibliasacco.com/user/login" class="portal-button">
         Member Portal
         <i class="fas fa-arrow-right"></i>
-      </button>
+      </a>
       <button class="apply-now-button">
         Apply Now
         <i class="fas fa-arrow-right"></i>
