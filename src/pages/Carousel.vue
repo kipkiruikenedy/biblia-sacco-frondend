@@ -25,10 +25,15 @@ const sliderOptions = {
 
 <style scoped>
 .image-slider {
-  @apply mx-auto max-w-lg; 
+  @apply mx-auto max-w-lg;
+  background-color: red;
+  max-width: 100vw;
+  max-height: 60vh;
+  overflow: hidden;
 }
 
 .image-slider img {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
