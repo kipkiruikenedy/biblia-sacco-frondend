@@ -2,18 +2,19 @@
   <div class="image-slider">
     <Splide :options="sliderOptions" aria-label="My Favorite Images">
       <SplideSlide>
-        <img src="../assets/images/agm.jpg" alt="Sample 1">
+        <img src="../assets/images/reception.jpg" alt="Sample 1">
       </SplideSlide>
       <SplideSlide>
-        <img src="../assets/images/agm.jpg" alt="Sample 2">
+        <img src="../assets/images/reception.jpg" alt="Sample 2">
+      </SplideSlide>
+      <SplideSlide>
+        <img src="../assets/images/reception.jpg" alt="Sample 3">
       </SplideSlide>
     </Splide>
   </div>
 </template>
-
 <script setup>
 import '@splidejs/vue-splide/css';
-
 const sliderOptions = {
   rewind: true,
   perPage: 1, // Show one image at a time
@@ -26,7 +27,7 @@ const sliderOptions = {
 <style scoped>
 .image-slider {
   @apply mx-auto max-w-lg;
-  background-color: red;
+  /* background-color: red; */
   max-width: 100vw;
   max-height: 60vh;
   overflow: hidden;

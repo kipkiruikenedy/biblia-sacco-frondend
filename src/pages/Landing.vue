@@ -1,11 +1,11 @@
 <template>
   <div>
-    <div class="button-container mt-8">
+    <div class="grid grid-cols-4 gap-4 mt-2 mx-2 ">
       <a href="https://portal.bibliasacco.com/user/login" class="portal-button">
         Member Portal
         <i class="fas fa-arrow-right"></i>
       </a>
-      <button class="apply-now-button">
+      <button class="apply-now-button text-center">
         Apply Now
         <i class="fas fa-arrow-right"></i>
       </button>

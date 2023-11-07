@@ -1,5 +1,5 @@
 <template>
-  <nav class="bg-blue-900 py-2 sticky top-0 z-1">
+  <nav class="bg-blue-900 py-2 sticky top-0 z-100 hover:z-50">
     <div class="container mx-auto flex items-center justify-between">
       <div class="text-white flex space-x-4">
         <router-link to="/" class="hover:bg-blue-500 pointer-cursor px-2">Home</router-link>
