@@ -1,59 +1,38 @@
 <template>
-  <div>
-    <div class="grid grid-cols-4 gap-4 mt-2 mx-2 ">
-      <a href="https://portal.bibliasacco.com/user/login" class="portal-button">
-        Member Portal
-        <i class="fas fa-arrow-right"></i>
-      </a>
-      <button class="apply-now-button text-center">
-        Apply Now
-        <i class="fas fa-arrow-right"></i>
-      </button>
-      <button class="newsletter-button">
-        Newsletter
-        <i class="fas fa-arrow-right"></i>
-      </button>
-      <button class="app-guide-button">
-        Mobile Application Guide
-        <i class="fas fa-arrow-right"></i>
-      </button>
-    </div>
+  <div class="flex justify-center items-center gap-4 mt-8 pt-8">
+    <a href="https://portal.bibliasacco.com/user/login" class="custom-button portal-button">
+      <span>Member Portal</span>
+      <i class="fas fa-arrow-right"></i>
+    </a>
+    <button class="custom-button apply-now-button">
+      <span>Apply Now</span>
+      <i class="fas fa-arrow-right"></i>
+    </button>
+    <button class="custom-button newsletter-button">
+      <span>Newsletter</span>
+      <i class="fas fa-arrow-right"></i>
+    </button>
+    <button class="custom-button app-guide-button">
+      <span>Mobile App Guide</span>
+      <i class="fas fa-arrow-right"></i>
+    </button>
   </div>
 </template>
 
 <style scoped>
-.button-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
+.custom-button {
+  @apply bg-green-500 text-white px-6 py-3 rounded-full flex items-center transition duration-300 shadow-md;
 }
 
-.portal-button,
-.apply-now-button,
-.newsletter-button,
-.app-guide-button {
-  background-color: #007bff;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
+.custom-button:hover {
+  @apply bg-green-600 transform translate-y-[-2px] shadow-lg;
 }
 
-.portal-button:hover,
-.apply-now-button:hover,
-.newsletter-button:hover,
-.app-guide-button:hover {
-  background-color: #0056b3;
+.custom-button span {
+  @apply mr-2;
 }
 
 i {
-  margin-left: 5px;
-  font-size: 14px;
+  @apply text-xl;
 }
-
-/* You may need to include the FontAwesome CSS or load it from a CDN for the icons to display properly. */
 </style>

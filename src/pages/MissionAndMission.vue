@@ -1,28 +1,28 @@
 <template>
-  <div class="bg-gradient-to-r from-blue-400 to-green-400 py-12 mt-2">
-    <div class="container mx-auto p-8 rounded-lg bg-white shadow-lg text-center">
-      <div class="text-4xl text-gray-800 flex items-center justify-center mb-4">
-        <i class="fas fa-bullseye text-yellow-300 text-4xl mr-2"></i> Our Mission
+  <div class="bg-white shadow-lg py-12 mt-2">
+    <div class="container mx-auto p-8 rounded-lg text-center">
+      <div class="mb-8">
+        <i class="fas fa-bullseye text-yellow-500 text-5xl mb-4"></i>
+        <h2 class="text-4xl font-extrabold text-gray-800">Our Mission</h2>
+        <p class="text-lg text-gray-700 mt-2">
+          Transforming lives through innovative Sacco products and services with a commitment to affordability.
+        </p>
       </div>
-      <p class="text-lg text-gray-800 mb-8">
-        To Transform Members Lives by Providing them with diversified Sacco products and service at affordable terms
-      </p>
-      <div class="text-4xl text-gray-800 flex items-center justify-center mb-4">
-        <i class="fas fa-eye text-yellow-300 text-4xl mr-2"></i> Our Vision
+
+      <div>
+        <i class="fas fa-eye text-yellow-500 text-5xl mb-4"></i>
+        <h2 class="text-4xl font-extrabold text-gray-800">Our Vision</h2>
+        <p class="text-lg text-gray-700">
+          Empowering individuals and communities economically by being a trailblazing Sacco.
+        </p>
       </div>
-      <p class="text-lg text-gray-800">
-        To B
-      e a Model Sacco Empowering Christians Economically.
-      </p>
     </div>
   </div>
 </template>
 
 <style scoped>
-  /* Center the content horizontally and vertically within the container */
-  .bg-gradient-to-r {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  /* Apply a shadow to the card */
+  .shadow-lg {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
   }
 </style>

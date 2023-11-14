@@ -1,12 +1,12 @@
 <template>
   <div class="contact-us-section py-10 text-center">
     <div class="container mx-auto">
-      <div class="text-3xl font-semibold mb-4 text-BLUE-800">
-        <i class="fas fa-stopwatch"></i> DON’T WAIT
+      <div class="text-4xl font-bold mb-4 text-blue-800">
+        <i class="fas fa-stopwatch"></i> Don't Wait
       </div>
-      <p class="text-xl mb-6">Contact Us For A Free Consult</p>
-      <a href="http://localhost:5174/contact" class="bg-yellow-300 text-blue-600 font-semibold py-2 px-6 rounded-lg shadow-lg hover:shadow-xl">
-        <i class="fas fa-check-circle"></i> I’m Ready
+      <p class="text-lg mb-6">Reach out to us for a free consultation</p>
+      <a href="http://localhost:5174/contact" class="btn-ready">
+        <i class="fas fa-check-circle"></i> I'm Ready
       </a>
     </div>
   </div>
@@ -21,16 +21,23 @@ export default {
 <style scoped>
 .contact-us-section {
   background-color: #f8f8f8; /* Background color */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow for the section */
-  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lighter box shadow */
+  padding: 50px; /* Increased padding for more space */
 }
 
-button {
-  transition: all 0.2s; 
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+.btn-ready {
+  display: inline-block;
+  background-color: #3498db; /* Blue background color */
+  color: #fff; /* White text color */
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
 }
 
-button:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enlarge shadow on hover */
+.btn-ready:hover {
+  background-color: #2980b9; /* Darker shade of blue on hover */
 }
 </style>

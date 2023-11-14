@@ -1,93 +1,70 @@
 <template>
-  <div class="bg-gradient-to-r from-blue-400 to-purple-500 p-4 text-white text-center">
-    <h1 class="text-4xl font-semibold mb-4"><i class="fas fa-users text-4xl text-yellow-300"></i> Welcome, Dear Members</h1>
+  <div class="bg-gradient-to-r from-blue-500 to-purple-700 p-8 text-white text-center">
+    <h1 class="text-5xl font-extrabold mb-6"><i class="fas fa-users text-5xl text-yellow-300"></i> Welcome, Dear Members</h1>
 
-    <div class="mt-8 p-4 bg-white rounded-lg shadow-md text-black">
-      <h2 class="text-2xl font-semibold">How to Sign In to the Member Portal</h2>
-      <p>Before we can get started, we need some key information from you. This information will help facilitate your registration process. Please fill out the necessary details and submit them, either in person or through email.</p>
-
-      <div class="flex flex-wrap items-center mb-4">
-        <div class="w-full md:w-1/2">
-          <img src="https://via.placeholder.com/300" alt="Member Portal" class="w-full h-auto rounded-lg shadow-lg" />
+    <section class="mt-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div class="md:order-2">
+          <img src="https://via.placeholder.com/600" alt="Member Portal" class="w-full h-auto rounded-lg shadow-lg" />
         </div>
-        <div class="w-full md:w-1/2 mt-4 md:mt-0">
+        <div class="md:order-1 text-left">
+          <h2 class="text-3xl font-semibold mb-4">How to Sign In to the Member Portal</h2>
+          <p class="mb-4">Before we register you, it is important we have key information from you. That information will help in smooth registration. Fill it and submit it either physically or through email. Now, how to register:</p>
+
           <ol class="list-decimal pl-6">
             <li class="mb-2">
-              <i class="fas fa-laptop text-blue-500"></i> Open any web browser on your phone or computer.
+              Open any browser on your phone or computer.
               <a href="https://portal.bibliasacco.com" class="text-blue-600 hover:underline font-semibold" target="_blank">Visit the portal</a>. A sign-in page will appear.
               Enter your Full Membership number (e.g., ASK01234).
-              Enter the 4-digit password sent to your phone as an SMS. (Note: This one-time password is sent to the phone number you provided during registration).
-              You'll be prompted to complete a Captcha verification
-              <i class="fas fa-shield-alt text-green-500"></i>
-              Please enter the captcha text above and click 'Validate'.
-              Next, enter the OTP verification code
-              <i class="fas fa-mobile-alt text-blue-500"></i>
-              Please enter the one-time password received via SMS sent to your phone. (Note: OTP verification code is only sent to the phone number that you provided during registration).
-              Enter the 6-digit OTP verification code.
-              Click 'Validate' when prompted with KYC Verification.
+              Enter a 4 -digit password send on your phone as an SMS (NB: 4 -digit password is only sent to the phone number that one provided when filling the form). This is a one-time password.
+              You will be prompted with Captcha verification (Please enter the captcha text above ) and click validate.
+              Then you will be prompted with OTP verification code (Please enter the one-time password received via SMS) sent to your phone (NB: OTP verification code is only sent to the phone number that one provided when filling the form).
+              Enter the 6 – digit OTP verification code.
+              Click Validate when prompted with KYC Verification.
               If it's your first time, you will be required to enter a new password and confirm it.
-              You can now log in using your membership number and the newly created password.
+              You can now Login using your membership number and the password you have just created.
+              Done.
             </li>
           </ol>
-        </div>
-      </div>
-    </div>
 
-    <div class="mt-8 p-4 bg-white rounded-lg shadow-md text-black">
-      <h2 class="text-2xl font-semibold">How to Log In</h2>
-
-      <div class="flex flex-wrap items-center mb-4">
-        <div class="w-full md:w-1/2">
-          <img src="https://via.placeholder.com/300" alt="Member Portal" class="w-full h-auto rounded-lg shadow-lg" />
-        </div>
-        <div class="w-full md:w-1/2 mt-4 md:mt-0">
+          <h2 class="text-3xl font-semibold mb-4 mt-8">How to Login</h2>
           <ol class="list-decimal pl-6">
             <li class="mb-2">
-              <i class="fas fa-laptop text-blue-500"></i> Open any web browser on your phone or computer.
-              <a href="https://portal.bibliasacco.com" class="text-blue-600 hover:underline font-semibold" target="_blank">Visit the portal</a>. A sign-in page will appear.
+              Open any browser on your phone or computer.
+              On the tab type <a href="https://portal.bibliasacco.com" class="text-blue-600 hover:underline font-semibold" target="_blank">portal.bibliasacco.com</a>. A sign-in page will appear.
               Enter your full membership number (e.g., ASK01234).
-              Enter your password and click 'Sign In'.
-              You will be prompted with captcha verification
-              <i class="fas fa-shield-alt text-green-500"></i>
-              Please enter the captcha text above and click 'Validate'.
-              Click 'Generate One Time Password (OTP) Verification'.
-              Next, you will be prompted with OTP Verification
-              <i class="fas fa-mobile-alt text-blue-500"></i>
-              Please enter the one-time password received via SMS sent to your phone. (Note: OTP verification code is only sent to the phone number that you provided during registration).
+              Enter your password and click Sign in.
+              You will be prompted with captcha verification (Please enter the captcha text above) and click validate.
+              Click Generate One Time Password (OTP) Verification.
+              Then you will be prompted with OTP Verification (Please enter the one-time password received via SMS) sent to your phone (NB: OTP verification code is only sent to the phone number that one provided when filling the form).
               Enter the 6-Digit OTP verification code.
-              Click 'Validate'.
+              Click Validate.
+              Done.
+            </li>
+          </ol>
+
+          <h2 class="text-3xl font-semibold mb-4 mt-8">How to Navigate Around</h2>
+          <p class="mb-4">Once you are logged in, on the top left there are nine boxed dots.</p>
+          <ol class="list-decimal pl-6">
+            <li class="mb-2">
+              Click on the nine boxed dots.
+              A menu will appear containing the following:
+              <ul>
+                <li>i. Dashboard</li>
+                <li>ii. My Accounts – Contain account summary, account statement, and share certificate</li>
+                <li>iii. Loans – Contain Loan Summary, Loan statements, Loan Calculator, Loans Guaranteed and Loan Collateral</li>
+                <li>iv. My Profile – Contain Member Profile, Data Change Request, My files, My Beneficiaries and Change Password</li>
+                <li>v. Updates – Contain Announcements, Notifications and Branches</li>
+                <li>vi. Logout.</li>
+              </ul>
+              Enjoy.
             </li>
           </ol>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="mt-8 p-4 bg-white rounded-lg shadow-md text-black">
-      <h2 class="text-2xl font-semibold">How to Navigate Around</h2>
-      <p>Once you are logged in, on the top left, you'll find nine boxed dots. Click on the nine boxed dots to reveal the menu with the following options:</p>
-      <ul class="list-disc pl-6">
-        <li>
-          <i class="fas fa-tachometer-alt text-yellow-500"></i> Dashboard
-        </li>
-        <li>
-          <i class="fas fa-file-alt text-yellow-500"></i> My Accounts – Contains account summary, account statement, and share certificate
-        </li>
-        <li>
-          <i class="fas fa-hand-holding-usd text-yellow-500"></i> Loans – Includes Loan Summary, Loan statements, Loan Calculator, Loans Guaranteed, and Loan Collateral
-        </li>
-        <li>
-          <i class="fas fa-user text-yellow-500"></i> My Profile – Contains Member Profile, Data Change Request, My files, My Beneficiaries, and Change Password
-        </li>
-        <li>
-          <i class="fas fa-bell text-yellow-500"></i> Updates – Includes Announcements, Notifications, and Branches
-        </li>
-        <li>
-          <i class="fas fa-sign-out-alt text-red-500"></i> Logout.
-        </li>
-      </ul>
-    </div>
-
-    <p class="mt-4 text-xl">Enjoy your experience with the Member Portal!</p>
+    <p class="mt-12 text-xl">Experience the Member Portal like never before. Start exploring now!</p>
   </div>
 </template>
 
@@ -99,4 +76,35 @@ export default {
 
 <style scoped>
 /* Add any custom styling here */
+.list-decimal li {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+h2 {
+  color: #3b82f6; /* Blue color */
+}
+
+p {
+  color: #4b5563; /* Gray color */
+}
+
+/* Styling for the section with a background color */
+section {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the buttons */
+a {
+  color: #3182ce;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #2c5282;
+}
 </style>
