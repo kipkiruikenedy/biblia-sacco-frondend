@@ -1,5 +1,6 @@
 <template>
   <div class="image-slider">
+  <p class="text-center text-2xl font-bold pt-10">Our Partners</p>
     <Splide :options="sliderOptions" aria-label="My Favorite Images">
       <SplideSlide>
         <div class="splide1">

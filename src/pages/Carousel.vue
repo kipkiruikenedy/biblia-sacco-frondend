@@ -9,13 +9,13 @@
       </div>
       <Splide :options="sliderOptions" aria-label="My Favorite Images">
         <SplideSlide>
-          <img src="../assets/images/reception.jpg" alt="Sample 1">
+          <img src="../assets/images/home2.jpg" alt="Sample 1">
         </SplideSlide>
         <SplideSlide>
           <img src="../assets/images/reception.jpg" alt="Sample 2">
         </SplideSlide>
         <SplideSlide>
-          <img src="../assets/images/reception.jpg" alt="Sample 3">
+          <img src="../assets/images/home1.jpg" alt="Sample 3">
         </SplideSlide>
       </Splide>
     </div>
