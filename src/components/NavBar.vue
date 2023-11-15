@@ -1,5 +1,5 @@
 <template>
-  <nav class="bg-blue-900 py-2 sticky top-0 z-100 hover:z-50">
+  <nav class="bg-black py-2 sticky top-0 z-1000 hover:z-50">
     <div class="container mx-auto flex items-center justify-between">
       <div class="text-white flex space-x-4">
         <router-link to="/" class="hover:bg-blue-500 pointer-cursor px-2">Home</router-link>
@@ -38,7 +38,7 @@
         <router-link to="/career" class="hover:bg-blue-500 pointer-cursor">Career</router-link>
         <router-link to="/contact" class="hover:bg-blue-500 pointer-cursor">Contact Us</router-link>
       </div>
-      <a href="https://portal.bibliasacco.com/user/login" class="mr-4 bg-yellow-300 py-2 px-2 rounded-lg">Member Portal</a>
+      <a href="https://portal.bibliasacco.com/user/login" class="mr-4 bg-blue-500 hover:bg-blue-600 py-2 px-2 rounded-lg">Member Portal</a>
     </div>
   </nav>
 </template>

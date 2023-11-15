@@ -2,47 +2,37 @@
   <div class="image-slider">
     <Splide :options="sliderOptions" aria-label="Let's Solve Problems">
       <SplideSlide>
-        <div class="slide-content bg-blue-500 text-white rounded-lg p-8">
-          <i class="fas fa-piggy-bank text-5xl mb-4"></i>
+        <div class="slide-content bg-white text-black rounded-lg p-8">
+          <i class="fas fa-piggy-bank text-6xl mb-4 text-yellow-300"></i>
           <h2 class="text-xl font-semibold mb-2">Save With Us</h2>
           <p class="text-sm">Save With Us and Earn a Reputable Dividend at the End of the year.</p>
+          <div class="mt-8">
+          <router-link to="/save-with-us" class="btn-read-more">Read More</router-link>
+          </div>
+
         </div>
       </SplideSlide>
       <SplideSlide>
-        <div class="slide-content bg-green-500 text-white rounded-lg p-8">
-          <i class="fas fa-hand-holding-usd text-5xl mb-4"></i>
+        <div class="slide-content bg-white text-black rounded-lg p-8">
+          <i class="fas fa-hand-holding-usd text-6xl mb-4 text-orange-300"></i>
           <h2 class="text-xl font-semibold mb-2">Borrow Your Savings</h2>
           <p class="text-sm">Your Deposit Guarantees you to Borrow 3 times your Savings and even a top-up loan is added if the need arises.</p>
+<div class="mt-8">
+        <router-link to="/borrow-your-savings" class="btn-read-more">Read More</router-link>
+        </div>
         </div>
       </SplideSlide>
       <SplideSlide>
-        <div class="slide-content bg-purple-500 text-white rounded-lg p-8">
-          <i class="fas fa-chart-line text-5xl mb-4"></i>
+        <div class="slide-content bg-white text-black rounded-lg p-8">
+          <i class="fas fa-chart-line text-6xl mb-4 text-pink-300"></i>
           <h2 class="text-xl font-semibold mb-2">Invest Wisely</h2>
           <p class="text-sm">The more you Invest, the more your future brightens each day as you borrow to build yourself in the society.</p>
-        </div>
+          <div class="mt-8">
+        <router-link to="/invest-wisely" class="btn-read-more">Read More</router-link>
+       </div>
+          </div>
       </SplideSlide>
-      <SplideSlide>
-        <div class="slide-content bg-orange-500 text-white rounded-lg p-8">
-          <i class="fas fa-graduation-cap text-5xl mb-4"></i>
-          <h2 class="text-xl font-semibold mb-2">Education Made Easy</h2>
-          <p class="text-sm">In this generation, Education is mandatory to all people. The Sacco gives you a loan to ease your struggle.</p>
-        </div>
-      </SplideSlide>
-      <SplideSlide>
-        <div class="slide-content bg-indigo-500 text-white rounded-lg p-8">
-          <i class="fas fa-home text-5xl mb-4"></i>
-          <h2 class="text-xl font-semibold mb-2">Housing For You</h2>
-          <p class="text-sm">Housing Projects are done within the Sacco. Lands are bought and displayed to members.</p>
-        </div>
-      </SplideSlide>
-      <SplideSlide>
-        <div class="slide-content bg-red-500 text-white rounded-lg p-8">
-          <i class="fas fa-plane text-5xl mb-4"></i>
-          <h2 class="text-xl font-semibold mb-2">Holiday Plan Loan</h2>
-          <p class="text-sm">Do you want to go somewhere? This is the best loan for you.</p>
-        </div>
-      </SplideSlide>
+      <!-- ... (other SplideSlides) ... -->
     </Splide>
   </div>
 </template>
@@ -67,6 +57,7 @@ const sliderOptions = {
 }
 
 .slide-content {
+  @apply relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -74,7 +65,11 @@ const sliderOptions = {
 }
 
 .slide-content i {
-  font-size: 3em; /* Increased size */
+  font-size: 4em; /* Increased size */
+}
+
+.btn-read-more {
+  @apply absolute bottom-4 left-1/2 transform -translate-x-1/2 px-4 py-2 bg-blue-500 text-white rounded-full text-sm font-semibold hover:bg-blue-600 transition-colors duration-300;
 }
 
 .splide__arrow {
@@ -83,7 +78,7 @@ const sliderOptions = {
 }
 
 .splide__arrow:hover {
-  @apply bg-red-500;
+  @apply bg-gray-800; /* Change to a neutral color on hover */
 }
 
 .splide__arrow.prev {
@@ -103,6 +98,6 @@ const sliderOptions = {
 }
 
 .splide__pagination__page.splide__pagination__page--active {
-  @apply bg-red-500;
+  @apply bg-gray-800; /* Change to a neutral color for the active page */
 }
 </style>

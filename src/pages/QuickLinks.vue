@@ -4,47 +4,47 @@
     <div class="quick-links w-1/2">
       <h4 class="text-2xl font-semibold mb-4 text-blue-500">Quick Links</h4>
       <div class="grid grid-cols-3 gap-4">
-        <router-link to="/loans" class="quick-link-item hover:bg-gray-200 p-4 rounded-md text-center">
-          <div class="icon-container bg-green-500 rounded-full p-2">
-            <i class="fas fa-hand-holding-usd text-white"></i>
+        <router-link to="/loan" class="quick-link-item hover:bg-gray-200 p-4 rounded-md text-center transition duration-300 transform hover:scale-105">
+          <div class="icon-container bg-blue-500 rounded-full p-1">
+            <i class="fas fa-hand-holding-usd text-white text-xl"></i>
           </div>
-          <p>Loans</p>
+          <p class="text-xl font-semibold text-black">Loans</p>
         </router-link>
-        <router-link to="/savings" class="quick-link-item hover:bg-gray-200 p-4 rounded-md text-center">
-          <div class="icon-container bg-yellow-500 rounded-full p-2">
-            <i class="fas fa-piggy-bank text-white"></i>
+        <router-link to="/savings" class="quick-link-item hover:bg-gray-200 p-4 rounded-md text-center transition duration-300 transform hover:scale-105">
+          <div class="icon-container bg-blue-500 rounded-full p-1">
+            <i class="fas fa-piggy-bank text-white text-xl"></i>
           </div>
-          <p>Savings</p>
+          <p class="text-xl font-semibold text-black">Savings</p>
         </router-link>
-        <router-link to="/housing" class="quick-link-item hover:bg-gray-200 p-4 rounded-md text-center">
-          <div class="icon-container bg-purple-500 rounded-full p-2">
-            <i class="fas fa-home text-white"></i>
+        <router-link to="/housing" class="quick-link-item hover:bg-gray-200 p-4 rounded-md text-center transition duration-300 transform hover:scale-105">
+          <div class="icon-container bg-blue-500 rounded-full p-1">
+            <i class="fas fa-home text-white text-xl"></i>
           </div>
-          <p>Housing</p>
+          <p class="text-xl font-semibold text-black">Housing</p>
         </router-link>
-        <router-link to="/register" class="quick-link-item hover:bg-gray-200 p-4 rounded-md text-center">
-          <div class="icon-container bg-blue-500 rounded-full p-2">
-            <i class="fas fa-clipboard-check text-white"></i>
+        <router-link to="/register" class="quick-link-item hover:bg-gray-200 p-4 rounded-md text-center transition duration-300 transform hover:scale-105">
+          <div class="icon-container bg-blue-500 rounded-full p-1">
+            <i class="fas fa-clipboard-check text-white text-xl"></i>
           </div>
-          <p>Register</p>
+          <p class="text-xl font-semibold text-black">Member Registration</p>
         </router-link>
-        <router-link to="/faqs" class="quick-link-item hover:bg-gray-200 p-4 rounded-md text-center">
-          <div class="icon-container bg-red-500 rounded-full p-2">
-            <i class="fas fa-question text-white"></i>
+        <router-link to="/faqs" class="quick-link-item hover:bg-gray-200 p-4 rounded-md text-center transition duration-300 transform hover:scale-105">
+          <div class="icon-container bg-blue-500 rounded-full p-1">
+            <i class="fas fa-question text-white text-xl"></i>
           </div>
-          <p>FAQs</p>
+          <p class="text-xl font-semibold text-black">FAQs</p>
         </router-link>
-        <router-link to="/support" class="quick-link-item hover:bg-gray-200 p-4 rounded-md text-center">
-          <div class="icon-container bg-orange-500 rounded-full p-2">
-            <i class="fas fa-headset text-white"></i>
+        <router-link to="/support" class="quick-link-item hover:bg-gray-200 p-4 rounded-md text-center transition duration-300 transform hover:scale-105">
+          <div class="icon-container bg-blue-500 rounded-full p-1">
+            <i class="fas fa-headset text-white text-xl"></i>
           </div>
-          <p>Support</p>
+          <p class="text-xl font-semibold text-black">Member Support</p>
         </router-link>
       </div>
     </div>
 
     <!-- Vertical Line -->
-    <div class="vertical-line border-l border-gray-300 h-full mx-8"></div>
+    <div class="vertical-line border-l border-blue-500 h-full mx-8"></div>
 
     <!-- Who We Are Section -->
     <div class="who-we-are w-1/2 p-8 bg-white rounded-lg shadow-md">
@@ -56,7 +56,9 @@
         Biblia Sacco gives you a vehicle for savings and an opportunity to access competitive credit for growing your money with nothing but your regular savings and attractive interest rates.
       </p>
       <router-link to="/about">
-        <button class="bg-blue-500 text-white py-2 px-4 mt-4 rounded-md">Read More</button>
+        <button class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 mt-4 rounded-md transition duration-300 transform hover:scale-105 focus:outline-none">
+          Read More
+        </button>
       </router-link>
     </div>
   </div>
@@ -71,7 +73,7 @@ export default {
 <style scoped>
 /* Add any additional styles if needed */
 .vertical-line {
-  border-left: 2px solid #ccc; /* Vertical line color */
+  border-left: 2px solid #3498db; /* Blue color for the vertical line */
 }
 
 /* Additional styles for Who We Are section */
@@ -81,5 +83,15 @@ export default {
 
 .who-we-are p {
   font-size: 1.2rem; /* Increase font size for better readability */
+}
+
+/* Enhanced styles for Quick Links */
+.quick-link-item {
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.quick-link-item:hover {
+  background-color: #f3f3f3; /* Light gray on hover */
 }
 </style>

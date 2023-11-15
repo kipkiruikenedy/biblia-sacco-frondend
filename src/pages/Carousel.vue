@@ -1,9 +1,9 @@
 <template>
   <div class="flex items-center justify-center h-screen">
     <div class="image-slider relative h-90vh w-100vw">
-      <div class="slider-text absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white p-6 z-10">
-        <span class="font-bold text-5xl mb-4 hover-effect">SAVE | BORROW | INVEST</span>
-        <span class="text-lg hover-effect">
+<div class="slider-text absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white p-2 z-10">
+        <span class="font-bold text-5xl mb-4 hover-effect text-white">SAVE | BORROW | INVEST</span>
+        <span class="text-lg hover-effect text-white">
           SAVE WITH US AND PROSPER WITH YOUR SAVINGS AS YOU GROW TOWARDS YOUR FUTURE.
         </span>
       </div>
@@ -15,7 +15,7 @@
           <img src="../assets/images/reception.jpg" alt="Sample 2">
         </SplideSlide>
         <SplideSlide>
-          <img src="../assets/images/home1.jpg" alt="Sample 3">
+          <img src="../assets/images/agm.jpg" alt="Sample 3">
         </SplideSlide>
       </Splide>
     </div>

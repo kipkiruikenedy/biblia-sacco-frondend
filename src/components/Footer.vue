@@ -8,7 +8,7 @@
 
 <style scoped>
 .footer {
-  background-color: #333; /* Dark background color */
+  background-color: #072541; /* Dark background color */
   color: #fff; /* Text color */
 }
 

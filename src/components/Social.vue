@@ -1,15 +1,15 @@
 <template>
   <div class="social-media-icons">
-    <a href="#" class="social-icon" target="_blank">
+    <a href="#" class="social-icon bg-blue-500" target="_blank">
       <i class="fab fa-facebook"></i>
     </a>
-    <a href="https://wa.me/254799463307" class="social-icon" target="_blank">
+    <a href="https://wa.me/254799463307" class="social-icon bg-blue-500" target="_blank">
       <i class="fab fa-whatsapp"></i>
     </a>
-    <a href="#" class="social-icon" target="_blank">
+    <a href="#" class="social-icon bg-blue-500" target="_blank">
       <i class="fab fa-twitter"></i>
     </a>
-    <a href="#" class="social-icon" target="_blank">
+    <a href="#" class="social-icon bg-blue-500" target="_blank">
       <i class="fab fa-instagram"></i>
     </a>
   </div>
@@ -28,9 +28,8 @@
 }
 
 .social-icon {
-  background-color: #3498db; /* Blue background color */
   color: #fff;
-  font-size: 24px;
+  font-size: 18px;
   margin-bottom: 10px;
   padding: 10px;
   border-radius: 50%;
