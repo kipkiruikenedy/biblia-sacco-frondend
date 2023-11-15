@@ -5,9 +5,10 @@
         <i class="fas fa-stopwatch"></i> Don't Wait
       </div>
       <p class="text-lg mb-6">Reach out to us for a free consultation</p>
-      <a href="http://localhost:5174/contact" class="btn-ready">
+      <!-- Use router-link to navigate to the contact page -->
+      <router-link to="/contact" class="btn-ready">
         <i class="fas fa-check-circle"></i> I'm Ready
-      </a>
+      </router-link>
     </div>
   </div>
 </template>
