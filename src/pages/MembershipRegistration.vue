@@ -1,28 +1,28 @@
 <template>
-  <div class="membership-registration">
+  <div class="membership-registration bg-gray-100 min-h-screen p-8">
     <header class="text-center mb-8">
-      <h1 class="text-5xl font-bold text-primary">Welcome to Our Community!</h1>
-      <p class="text-gray-900 text-lg">Explore the journey to becoming a valued member. Choose your affiliation type and provide the necessary details.</p>
+      <h1 class="text-5xl font-bold text-primary mb-4">Welcome to Our Community!</h1>
+      <p class="text-gray-700 text-lg leading-relaxed">
+        Embark on a journey to become a valued member of our community. Choose your affiliation type and provide the necessary details.
+      </p>
     </header>
 
     <div class="registration-sections grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <div v-for="section in registrationSections" :key="section.title" class="registration-card">
+      <div v-for="section in registrationSections" :key="section.title" class="registration-card bg-white rounded-lg p-6 shadow-md">
         <div class="card-header mb-4">
           <i :class="section.iconClass" class="text-8xl text-primary"></i>
           <h2 class="text-3xl font-semibold mt-4">{{ section.title }}</h2>
         </div>
-        <p class="text-black text-lg">{{ section.description }}</p>
-        <ul class="list-disc mt-6 ml-8 text-success">
+        <p class="text-gray-700 text-lg leading-relaxed">{{ section.description }}</p>
+        <ol class="list-decimal mt-6 ml-8 text-gray-700">
           <li v-for="item in section.items" :key="item.text" class="text-left">
-            <i :class="item.iconClass"></i>
             {{ item.text }}
           </li>
-        </ul>
+        </ol>
       </div>
     </div>
   </div>
 </template>
-
 
 
 <script>

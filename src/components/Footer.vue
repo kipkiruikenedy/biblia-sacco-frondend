@@ -2,6 +2,9 @@
   <footer class="footer">
     <div class="container mx-auto p-6">
       <p class="text-lg text-white text-center">&copy; 2023 Biblia Sacco Ltd</p>
+      <!-- Add these links where applicable -->
+ <router-link to="/privacy-policy">Privacy Policy</router-link>
+
     </div>
   </footer>
 </template>

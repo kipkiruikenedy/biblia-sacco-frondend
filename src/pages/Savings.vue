@@ -1,6 +1,6 @@
 <template>
   <div class="p-4 text-white">
-    <h1 class="bg-blue-900 text-4xl font-bold mb-8 text-center">Discover Our Savings Products</h1>
+    <h1 class="bg-blue-900 text-4xl font-bold mb-8 text-center py-3 px-2 rounded">Discover Our Savings Products</h1>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-blue-900">
       <div v-for="(product, index) in savingsProducts" :key="index" class="flex flex-col items-center">
@@ -26,7 +26,7 @@ const savingsProducts = [
     icon: "fas fa-sun",
     title: "Holiday Savings Plan",
     description: "Enjoy your dream vacations with our Holiday Savings Plan. Members contributing shares and repaying loans consistently are eligible. Access your savings after 12 months of dedicated saving. Early withdrawals within 12 months will not receive interest.",
-    color: "yellow-500",
+    color: "black",
   },
   {
     icon: "fas fa-umbrella-beach",

@@ -1,21 +1,27 @@
 <template>
   <div class="flex items-center justify-center h-screen">
-    <div class="image-slider relative h-90vh w-100vw">
-<div class="slider-text absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white p-2 z-10">
-        <span class="font-bold text-5xl mb-4 hover-effect text-white">SAVE | BORROW | INVEST</span>
-        <span class="text-lg hover-effect text-white">
+    <div class="image-slider relative h-90vh w-100vw overflow-hidden">
+      <div class="slider-text absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white p-8 z-10 bg-black bg-opacity-30">
+        <span class="font-bold text-5xl mb-4">SAVE | BORROW | INVEST</span>
+        <span class="text-lg">
           SAVE WITH US AND PROSPER WITH YOUR SAVINGS AS YOU GROW TOWARDS YOUR FUTURE.
         </span>
       </div>
-      <Splide :options="sliderOptions" aria-label="My Favorite Images">
+      <Splide :options="sliderOptions" aria-label="Image Slider">
         <SplideSlide>
-          <img src="../assets/images/reception.jpg.jpg" alt="Sample 1">
+          <div class="aspect-w-16 aspect-h-9">
+            <img src="../assets/images/reception.jpg" alt="Reception" class="object-cover w-full h-full">
+          </div>
         </SplideSlide>
         <SplideSlide>
-          <img src="../assets/images/agm.jpg" alt="Sample 2">
+          <div class="aspect-w-16 aspect-h-9">
+            <img src="../assets/images/agm.jpg" alt="AGM" class="object-cover w-full h-full">
+          </div>
         </SplideSlide>
         <SplideSlide>
-          <img src="../assets/images/members.png" alt="Sample 3">
+          <div class="aspect-w-16 aspect-h-9">
+            <img src="../assets/images/members.png" alt="Members" class="object-cover w-full h-full">
+          </div>
         </SplideSlide>
       </Splide>
     </div>
@@ -29,50 +35,21 @@ const sliderOptions = {
   perPage: 1,
   arrows: true,
   autoplay: true,
-  interval: 1000,
+  interval: 1000, // Set the interval to 5 seconds
 };
 </script>
 
 <style scoped>
 .image-slider {
   @apply mx-auto relative;
-  height: 90vh; /* Set the height to 90% of the viewport height */
-  width: 100vw; /* Set the width to 100% of the viewport width */
-  overflow: hidden;
+  height: 90vh;
+  width: 100vw;
 }
 
 .slider-text {
-  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
-  padding: 30px; /* Adjust padding as needed */
+  @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white p-8 z-10;
+  background-color: rgba(0, 0, 0, 0.3); /* Set the background to be more transparent */
   border-radius: 10px;
-  z-index: 10; /* Ensure the text is on top of the image */
-  animation: dance 5s infinite alternate; /* Add continuous animation */
-}
-
-@keyframes dance {
-  0% {
-    transform: scale(1) translateX(0) rotate(0);
-  }
-  100% {
-    transform: scale(1.1) translateX(2px) rotate(2deg);
-  }
-}
-
-.hover-effect {
-  display: inline-block;
-  transition: transform 0.3s ease-in-out, font-size 0.3s ease-in-out;
-}
-
-.hover-effect:hover {
-  transform: scale(1.1) translateX(2px) rotate(2deg);
-  font-size: 1.1em;
-}
-
-.image-slider img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 .splide__arrow {
@@ -81,7 +58,7 @@ const sliderOptions = {
 }
 
 .splide__arrow:hover {
-  @apply bg-red-500; 
+  @apply bg-red-500;
 }
 
 .splide__arrow.prev {
@@ -89,7 +66,7 @@ const sliderOptions = {
 }
 
 .splide__arrow.next {
-  @apply right-4; 
+  @apply right-4;
 }
 
 .splide__pagination {
@@ -97,7 +74,7 @@ const sliderOptions = {
 }
 
 .splide__pagination__page {
-  @apply w-4 h-4 bg-gray-300 rounded-full m-2 cursor-pointer; 
+  @apply w-4 h-4 bg-gray-300 rounded-full m-2 cursor-pointer;
 }
 
 .splide__pagination__page.splide__pagination__page--active {

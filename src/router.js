@@ -16,6 +16,9 @@ import AGM from './pages/AGM.vue';
 import Career from './pages/Career.vue';
 import ContactUs from './pages/ContactUs.vue';
 
+import PrivacyPolicy from './components/PrivacyPolicy.vue';
+import CookiesPolicy from './components/CookiesPolicy.vue';
+
 const routes = [
     { path: '/', component: Home },
     { path: '/about', component: About },
@@ -31,6 +34,10 @@ const routes = [
     { path: '/agm', component: AGM },
     { path: '/career', component: Career },
     { path: '/contact', component: ContactUs },
+
+//    PRIVACY POLICY
+    { path: '/privacy-policy', component: PrivacyPolicy },
+    { path: '/cookies-policy', component: CookiesPolicy },
     ];
 
 const router = createRouter({

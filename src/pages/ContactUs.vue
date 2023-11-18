@@ -1,16 +1,14 @@
 <template>
   <div class="contact-page bg-gray-100 text-gray-800 p-6">
-    <!-- <div class="relative">
+     <div class="relative">
       <img
         src="../assets/images/agm.jpg"
         alt="Contact Us"
         class="w-full h-64 object-cover rounded-lg shadow-lg"
       />
       <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50 rounded-lg"></div>
-      <h1 class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-4xl font-bold text-white z-10">
-        Contact Us
-      </h1>
-    </div> -->
+
+    </div>
 
     <div class="contact-layout grid grid-cols-1 md:grid-cols-2 gap-4 mt-8 p-4">
       <!-- Contact Form -->
