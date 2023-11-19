@@ -1,5 +1,5 @@
 <template>
-  <div class="social-media-icons">
+  <div class="social-media-icons z-500">
     <a href="#" class="social-icon bg-blue-500" target="_blank">
       <i class="fab fa-facebook"></i>
     </a>
@@ -24,7 +24,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  z-index: 999;
+ 
 }
 
 .social-icon {

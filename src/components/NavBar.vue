@@ -45,7 +45,7 @@
   </div>
 
   <!-- MOBILE PHONE MENU -->
-  <div class="flex justify-between md:hidden">
+  <div class="flex z-1000 justify-between md:hidden">
     <nav class=" flex bg-black py-2 sticky top-0 z-1000 hover:z-50">
       <div class="container mx-auto flex flex-col items-start justify-between p-2">
         <div @click="toggleMenu" class="text-red-900 cursor-pointer">
