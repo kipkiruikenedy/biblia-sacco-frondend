@@ -1,16 +1,16 @@
 <template>
   <div class="membership-registration bg-gray-100 min-h-screen p-8">
     <header class="text-center mb-8">
-      <h1 class="text-5xl font-bold text-primary mb-4">Welcome to Our Community!</h1>
-      <p class="text-gray-700 text-lg leading-relaxed">
+      <h1 class=" text-lg md:text-5xl font-bold text-primary mb-4">Welcome to Our Community!</h1>
+      <p class="text-gray-700 text-md md:text-lg leading-relaxed">
         Embark on a journey to become a valued member of our community. Choose your affiliation type and provide the necessary details.
       </p>
     </header>
 
-    <div class="registration-sections grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="md:registration-sections grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       <div v-for="section in registrationSections" :key="section.title" class="registration-card bg-white rounded-lg p-6 shadow-md">
         <div class="card-header mb-4">
-          <i :class="section.iconClass" class="text-8xl text-primary"></i>
+          <i :class="section.iconClass" class="md:text-8xl text-primary"></i>
           <h2 class="text-3xl font-semibold mt-4">{{ section.title }}</h2>
         </div>
         <p class="text-gray-700 text-lg leading-relaxed">{{ section.description }}</p>

@@ -16,12 +16,13 @@
           <i class="fas fa-file-contract mr-2"></i> Loan Terms
         </h2>
         <p class="text-gray-600 mb-4">Explore our loan terms and policies to make informed decisions.</p>
-        <ul class="pl-6 text-gray-800">
-          <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i> A member qualifies for a loan after saving for 6 months continuously.</li>
-          <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i> A loan must be fully guaranteed.</li>
-          <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i> A member who withdraws from the Society and rejoins later shall be treated as a new member for the purposes of the loan policy.</li>
-          <li class="mb-2"><i class="fas fa-check text-green-500 mr-2"></i> All required attachments on the loan form must be attached.</li>
-        </ul>
+       <ul class="pl-6 text-gray-800 list-disc">
+  <li class="mb-2">A member qualifies for a loan after saving for 6 months continuously.</li>
+  <li class="mb-2">A loan must be fully guaranteed.</li>
+  <li class="mb-2">A member who withdraws from the Society and rejoins later shall be treated as a new member for the purposes of the loan policy.</li>
+  <li class="mb-2">All required attachments on the loan form must be attached.</li>
+</ul>
+
       </section>
 
       <!-- Loan Features Section -->

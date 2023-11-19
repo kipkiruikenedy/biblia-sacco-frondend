@@ -2,10 +2,10 @@
   <div class="bg-white text-gray-800 p-6 rounded-lg shadow-xl">
     <!-- About Us -->
 <section class="flex flex-col md:flex-row items-center justify-center mb-8">
-  <img src="../assets/images/about.jpg" alt="About Us" class="h-64 object-cover rounded-lg mb-4 md:mr-8">
+  <img src="../assets/images/about.jpg" alt="About Us" class="md:h-64 object-cover rounded-lg mb-4 md:mr-8">
 
   <div class="max-w-md md:max-w-lg p-6 bg-gray-100 rounded-lg shadow-md">
-    <h2 class="text-3xl font-bold mb-4 text-gray-800">Who We Are</h2>
+    <h2 class="text-3xl font-bold mb-4 text-gray-800 text-center">Who We Are</h2>
     <p class="text-base text-gray-600 mb-4">
       Biblia Sacco is a leading Evangelical Christian Saving and Credit Co-operative Society in Kenya, which draws its membership from Churches, NGOs, Schools, Universities, Hospitals, Media houses, Groups/Chamas, and Individuals.
     </p>
@@ -95,7 +95,7 @@
      <!-- Why Join Us -->
     <section class="p-6 bg-gray-100 rounded-lg shadow-md flex flex-col md:flex-row items-center">
       <div class="max-w-md md:max-w-lg mb-4 md:mb-0 md:mr-8">
-        <img src="../assets/images/values.jpg" alt="Why Join Us" class="w-full h-64 object-cover rounded-lg mb-4">
+        <img src="../assets/images/join.jpg" alt="Why Join Us" class="w-full h-64 object-cover rounded-lg mb-4">
         <h2 class="text-3xl font-bold mb-2 text-gray-800">Why Join Us</h2>
         <ul class="list-disc list-inside text-base mb-4">
           <li>Fast Loan Processing.</li>
@@ -111,7 +111,7 @@
     </section>
 
   <!-- Core Values -->
-    <section class="p-6 bg-gray-100 rounded-lg shadow-md text-center">
+    <section class="p-6 bg-gray-100 rounded-lg shadow-md ">
       <div class="mb-4">
         <img src="../assets/images/values.jpg" alt="Core Values" class=" object-contain rounded-full mx-auto mb-2">
         <h2 class="text-3xl font-bold text-gray-800">Core Values</h2>

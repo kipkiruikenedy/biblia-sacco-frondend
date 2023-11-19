@@ -4,9 +4,9 @@
   <QuickLinks />
   <Social />
   <Cards />
-   <div class="flex">
-    <Partners class="w-3/5" /> <!-- 60% width -->
-    <Contact class="w-2/5" />  <!-- 40% width -->
+   <div class="flex flex-col md:flex-row">
+    <Partners class="w-full md:w-3/5" /> <!-- 60% width -->
+    <Contact class="block md:w-2/5" />  <!-- 40% width -->
   </div>
 <ChartBot />
   </div>

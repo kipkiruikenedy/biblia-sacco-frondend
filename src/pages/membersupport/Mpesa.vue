@@ -26,7 +26,7 @@
 
       <div class="image-container">
         <!-- Add your M-Pesa payment image here -->
-        <img src="../../assets/images/mpesa.jpg" alt="Make Payments via M-Pesa" class="w-full h-auto rounded-lg shadow-lg">
+        <img src="../../assets/images/mpesa.svg" alt="Make Payments via M-Pesa" class="w-full h-auto rounded-lg shadow-lg">
       </div>
     </div>
   </div>

@@ -1,9 +1,9 @@
 <template>
-  <div class="container mx-auto flex justify-center items-center py-6">
+  <div class="container flex flex-col md:flex-row mx-auto  justify-center items-center py-0 md:py-6">
     <!-- Quick Links Section -->
-    <div class="quick-links w-1/2">
-      <h4 class="text-2xl font-semibold mb-4 text-blue-500">Quick Links</h4>
-      <div class="grid grid-cols-3 gap-4">
+    <div class="quick-links md:w-1/2">
+      <h4 class="text-2xl font-semibold mb-4 text-blue-500 text-center">Quick Links</h4>
+      <div class="flex flex-wrap  md:grid grid-cols-3 gap-4 ">
         <router-link to="/loan" class="quick-link-item hover:bg-gray-200 p-4 rounded-md text-center transition duration-300 transform hover:scale-105">
           <div class="icon-container bg-blue-500 rounded-full p-1">
             <i class="fas fa-hand-holding-usd text-white text-xl"></i>
@@ -47,16 +47,16 @@
     <div class="vertical-line border-l border-blue-500 h-full mx-8"></div>
 
     <!-- Who We Are Section -->
-    <div class="who-we-are w-1/2 p-8 bg-white rounded-lg shadow-md">
-      <h4 class="text-3xl font-semibold mb-4 text-blue-500">Who We Are</h4>
-      <p class="text-gray-700 leading-relaxed">
+    <div class="who-we-are md:w-1/2 p-8 bg-white rounded-lg shadow-md">
+      <h4 class="text-3xl font-semibold mb-4 text-blue-500 text-center ">Who We Are</h4>
+      <p class="text-gray-700 leading-relaxed flex-wrap">
         Biblia Sacco is a leading Evangelical Christian Savings and Credit Co-operative Society in Kenya for workers of churches, NGOs, Schools including Universities, Hospitals, Media houses, and others.
       </p>
       <p class="text-gray-700 leading-relaxed mt-4">
         Biblia Sacco gives you a vehicle for savings and an opportunity to access competitive credit for growing your money with nothing but your regular savings and attractive interest rates.
       </p>
       <router-link to="/about">
-        <button class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 mt-4 rounded-md transition duration-300 transform hover:scale-105 focus:outline-none">
+        <button class=" bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 mt-4 rounded-md transition duration-300 transform hover:scale-105 focus:outline-none">
           Read More
         </button>
       </router-link>

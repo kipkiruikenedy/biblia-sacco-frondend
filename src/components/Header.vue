@@ -13,7 +13,7 @@
 
       <!-- Logo or Site Name (Add your own logo or site name here) -->
       <div class="text-2xl font-bold">
-        <a href="/" class="text-2xl">Logo</a>
+        <a href="/" class="text-2xl hidden md:flex">Logo</a>
       </div>
 
       <!-- Email -->
