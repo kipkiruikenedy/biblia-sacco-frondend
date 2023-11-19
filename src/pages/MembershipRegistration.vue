@@ -10,7 +10,7 @@
     <div class="md:registration-sections grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       <div v-for="section in registrationSections" :key="section.title" class="registration-card bg-white rounded-lg p-6 shadow-md">
         <div class="card-header mb-4">
-          <i :class="section.iconClass" class=" text-lg md:text-8xl text-primary"></i>
+          <i :class="section.iconClass" class="text-8xl text-primary"></i>
           <h2 class="text-3xl font-semibold mt-4 text-center">{{ section.title }}</h2>
         </div>
         <p class="text-gray-700 text-lg leading-relaxed">{{ section.description }}</p>
