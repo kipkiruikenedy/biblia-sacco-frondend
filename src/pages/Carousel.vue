@@ -35,7 +35,7 @@ const sliderOptions = {
   perPage: 1,
   arrows: true,
   autoplay: true,
-  interval: 1000, // Set the interval to 5 seconds
+  interval: 3000, // Set the interval to 5 seconds
 };
 </script>
 
