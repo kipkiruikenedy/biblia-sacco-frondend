@@ -45,8 +45,8 @@
   </div>
 
   <!-- MOBILE PHONE MENU -->
-  <div class="md:hidden">
-    <nav class="bg-black py-2 sticky top-0 z-1000 hover:z-50">
+  <div class="flex justify-between md:hidden">
+    <nav class=" flex bg-black py-2 sticky top-0 z-1000 hover:z-50">
       <div class="container mx-auto flex flex-col items-start justify-between p-2">
         <div @click="toggleMenu" class="text-red-900 cursor-pointer">
           <span class="bg-black hover:bg-blue-500 p-3"><i class="fas fa-bars text-white"></i>
@@ -93,11 +93,13 @@
 
           <router-link to="/career" @click="closeMenu" class="hover:bg-blue-500">Career</router-link>
           <router-link to="/contact" @click="closeMenu" class="hover:bg-blue-500">Contact Us</router-link>
+             <a href="https://portal.bibliasacco.com/user/login" class="mr-4 bg-blue-500 py-1 px-1  hover:bg-blue-600 md:py-2 md:px-2 rounded-lg">Member Portal</a>
         </div>
 
-        <a href="https://portal.bibliasacco.com/user/login" class="mr-4 bg-blue-500 hover:bg-blue-600 py-2 px-2 rounded-lg">Member Portal</a>
       </div>
+
     </nav>
+
   </div>
 </template>
 
