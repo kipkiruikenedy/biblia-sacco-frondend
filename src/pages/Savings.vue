@@ -8,7 +8,7 @@
           <i :class="`${product.icon} text-5xl`"></i>
         </div>
         <h2 class="text-2xl font-semibold">{{ product.title }}</h2>
-        <p class="text-lg mt-4">{{ product.description }}</p>
+        <p class="text-lg mt-4 text-center">{{ product.description }}</p>
       </div>
     </div>
   </div>
