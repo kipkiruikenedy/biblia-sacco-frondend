@@ -16,13 +16,13 @@
           </div>
           <p class="text-xl font-semibold text-black">Savings</p>
         </router-link>
-        <router-link to="/housing" class="quick-link-item hover:bg-gray-200 p-4 rounded-md text-center transition duration-300 transform hover:scale-105">
+        <router-link to="/housing-scheme" class="quick-link-item hover:bg-gray-200 p-4 rounded-md text-center transition duration-300 transform hover:scale-105">
           <div class="icon-container bg-blue-500 rounded-full p-1">
             <i class="fas fa-home text-white text-xl"></i>
           </div>
           <p class="text-xl font-semibold text-black">Housing</p>
         </router-link>
-        <router-link to="/register" class="quick-link-item hover:bg-gray-200 p-4 rounded-md text-center transition duration-300 transform hover:scale-105">
+        <router-link to="/member-registration" class="quick-link-item hover:bg-gray-200 p-4 rounded-md text-center transition duration-300 transform hover:scale-105">
           <div class="icon-container bg-blue-500 rounded-full p-1">
             <i class="fas fa-clipboard-check text-white text-xl"></i>
           </div>
@@ -34,7 +34,7 @@
           </div>
           <p class="text-xl font-semibold text-black">FAQs</p>
         </router-link>
-        <router-link to="/support" class="quick-link-item hover:bg-gray-200 p-4 rounded-md text-center transition duration-300 transform hover:scale-105">
+        <router-link to="/member-support" class="quick-link-item hover:bg-gray-200 p-4 rounded-md text-center transition duration-300 transform hover:scale-105">
           <div class="icon-container bg-blue-500 rounded-full p-1">
             <i class="fas fa-headset text-white text-xl"></i>
           </div>
