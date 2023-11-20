@@ -2,16 +2,16 @@
   <div class="member-portal-container">
     <div class="member-portal">
       <div class="content">
-        <h1 class="text-4xl font-bold mb-6 text-primary">How to Navigate Around</h1>
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 text-primary">How to Navigate Around</h1>
 
-        <p class="text-gray-700 mb-6">
+        <p class="text-gray-700 mb-4 md:mb-6">
           Once you are logged in, on the top left there are nine boxed dots.
         </p>
 
-        <ol class="list-decimal text-gray-700 mb-8">
+        <ol class="list-decimal text-gray-700 mb-6 md:mb-8">
           <li>Click on the nine boxed dots.</li>
           <li>A menu will appear containing the following:</li>
-          <ul class="list-disc ml-6">
+          <ul class="list-disc ml-4 md:ml-6">
             <li>Dashboard</li>
             <li>My Accounts – Contains account summary, account statement, and share certificate</li>
             <li>Loans – Contains Loan Summary, Loan statements, Loan Calculator, Loans Guaranteed, and Loan Collateral</li>
@@ -21,7 +21,7 @@
           </ul>
         </ol>
 
-        <p class="text-green-500 font-semibold">Enjoy!</p>
+        <p class="text-green-500 font-semibold mb-4">Enjoy!</p>
       </div>
 
       <div class="image-container">
@@ -41,27 +41,28 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .member-portal {
   max-width: 95vw;
   width: 100%;
-  padding: 40px;
+  padding: 20px;
   border-radius: 20px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   background-color: #fff;
   display: flex;
+  flex-direction: column;
 }
 
 .content {
   flex: 1;
-  max-width: 600px;
+  max-width: 100%;
 }
 
 .image-container {
-  flex: 1;
-  padding-left: 20px;
+  padding-top: 20px;
+  max-width: 100%;
 }
 
 .text-primary {
@@ -77,4 +78,19 @@
 }
 
 /* Add any additional styling here */
+
+@media screen and (min-width: 768px) {
+  .member-portal {
+    flex-direction: row;
+  }
+
+  .content {
+    max-width: 600px;
+    margin-right: 20px;
+  }
+
+  .image-container {
+    padding-top: 0;
+  }
+}
 </style>

@@ -1,8 +1,13 @@
 <template>
   <div class="member-portal-container">
     <div class="member-portal">
-      <div class="content">
-        <h1 class="text-4xl font-bold mb-6 text-primary">How to Make Payments via M-Pesa</h1>
+      <div class="image-container">
+        <!-- Add your M-Pesa payment image here -->
+        <img src="../../assets/images/mpesa.svg" alt="Make Payments via M-Pesa" class="w-full h-auto rounded-lg shadow-lg p-6">
+      </div>
+
+      <div class="content p-6">
+        <h1 class="text-2xl md:text-4xl font-bold mb-6 text-primary">How to Make Payments via M-Pesa</h1>
 
         <p class="text-gray-700 mb-6">
           To make payments using M-Pesa, follow these simple steps:
@@ -23,11 +28,6 @@
 
         <p class="text-green-500 font-semibold">Thank you for your M-Pesa payment!</p>
       </div>
-
-      <div class="image-container">
-        <!-- Add your M-Pesa payment image here -->
-        <img src="../../assets/images/mpesa.svg" alt="Make Payments via M-Pesa" class="w-full h-auto rounded-lg shadow-lg">
-      </div>
     </div>
   </div>
 </template>
@@ -41,27 +41,29 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .member-portal {
   max-width: 95vw;
   width: 100%;
-  padding: 40px;
+  padding: 20px;
   border-radius: 20px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   background-color: #fff;
   display: flex;
-}
-
-.content {
-  flex: 1;
-  max-width: 600px;
+  flex-direction: column;
+  text-align: center;
 }
 
 .image-container {
-  flex: 1;
-  padding-left: 20px;
+  margin: 20px auto; /* Center the image */
+  max-width: 100%;
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto; /* Center the content */
 }
 
 .text-primary {
@@ -77,4 +79,21 @@
 }
 
 /* Add any additional styling here */
+
+@media (min-width: 768px) {
+  .member-portal {
+    flex-direction: row;
+  }
+
+  .content {
+    margin-left: 20px;
+    flex: 1;
+    text-align: left;
+  }
+
+  .image-container {
+    margin: 0;
+    max-width: 400px;
+  }
+}
 </style>

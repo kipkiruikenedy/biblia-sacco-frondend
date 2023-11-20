@@ -1,5 +1,3 @@
-
-
 <template>
   <div class="member-portal-container">
     <div class="member-portal flex flex-col-reverse md:flex-row bg-white rounded-lg shadow-lg overflow-hidden">
@@ -14,7 +12,7 @@
         <ol class="list-decimal text-gray-700 mb-6 ml-6">
           <li>Open any browser on your phone or computer.</li>
           <li>Visit <span class="font-semibold">portal.bibliasacco.com</span>.</li>
-           <li>A sign-in page will appear.</li>
+          <li>A sign-in page will appear.</li>
           <li>Enter your full membership number (e.g., ASK01234).</li>
           <li>Enter your password and click Sign in.</li>
           <li>You will be prompted with captcha verification (Please enter the captcha text above) and click validate.</li>
@@ -64,5 +62,15 @@
   color: #27ae60; /* Replace with your brand color */
 }
 
-/* Add any additional styling here */
+/* Add mobile responsiveness */
+@media screen and (max-width: 767px) {
+  .member-portal {
+    flex-direction: column-reverse;
+  }
+
+  .image-container,
+  .content {
+    width: 100%;
+  }
+}
 </style>

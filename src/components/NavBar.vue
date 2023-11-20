@@ -39,7 +39,7 @@
           <router-link to="/career" class="hover:bg-blue-500 pointer-cursor">Career</router-link>
           <router-link to="/contact" class="hover:bg-blue-500 pointer-cursor">Contact Us</router-link>
         </div>
-        <a href="https://portal.bibliasacco.com/user/login" class="mr-4 bg-blue-500 hover:bg-blue-600 py-2 px-2 rounded-lg">Member Portal</a>
+        <a href="https://portal.bibliasacco.com/user/login" class="font-semibold mr-4 bg-blue-500 hover:bg-blue-600 py-2 px-2 rounded-lg">Member Portal</a>
       </div>
     </nav>
   </div>

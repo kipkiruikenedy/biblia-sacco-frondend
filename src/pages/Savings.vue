@@ -8,7 +8,9 @@
           <i :class="`${product.icon} text-5xl`"></i>
         </div>
         <h2 class="text-2xl font-semibold">{{ product.title }}</h2>
-        <p class="text-lg mt-4 text-center">{{ product.description }}</p>
+        <ul class="text-lg mt-4 list-disc list-inside">
+          <li v-for="(point, i) in product.descriptionPoints" :key="i">{{ point }}</li>
+        </ul>
       </div>
     </div>
   </div>
@@ -19,22 +21,37 @@ const savingsProducts = [
   {
     icon: "fas fa-graduation-cap",
     title: "School Fees Saving Plan",
-    description: "Secure your child's education with our School Fees Saving Plan. Members must consistently contribute shares and repay other loans to access this plan. Unlock your savings after 12 months of consistent contributions. Early withdrawals within 12 months will not receive interest.",
+    descriptionPoints: [
+      "Secure your child's education with our School Fees Saving Plan.",
+      "Members must consistently contribute shares and repay other loans to access this plan.",
+      "Unlock your savings after 12 months of consistent contributions.",
+      "Early withdrawals within 12 months will not receive interest.",
+      ],
     color: "blue-500",
   },
   {
     icon: "fas fa-sun",
     title: "Holiday Savings Plan",
-    description: "Enjoy your dream vacations with our Holiday Savings Plan. Members contributing shares and repaying loans consistently are eligible. Access your savings after 12 months of dedicated saving. Early withdrawals within 12 months will not receive interest.",
+    descriptionPoints: [
+      "Enjoy your dream vacations with our Holiday Savings Plan.",
+      "Members contributing shares and repaying loans consistently are eligible.",
+      "Access your savings after 12 months of dedicated saving.",
+      "Early withdrawals within 12 months will not receive interest.",
+      ],
     color: "black",
   },
   {
     icon: "fas fa-umbrella-beach",
     title: "Retirement Savings Plan",
-    description: "Secure your retirement with our Retirement Savings Plan. Plan for your future with Biblia. Unlock your savings after 12 months of consistent contributions. Early withdrawals within 12 months will not receive interest.",
+    descriptionPoints: [
+      "Secure your retirement with our Retirement Savings Plan.",
+      "Plan for your future with Biblia.",
+      "Unlock your savings after 12 months of consistent contributions.",
+      "Early withdrawals within 12 months will not receive interest.",
+      ],
     color: "green-500",
   },
-];
+  ];
 </script>
 
 <style scoped>
