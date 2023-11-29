@@ -12,8 +12,10 @@
       </div>
 
       <!-- Logo or Site Name (Add your own logo or site name here) -->
-      <div class="text-2xl font-bold">
-        <a href="/" class="text-2xl hidden md:flex">Logo</a>
+      <div >
+        <a href="/">
+        <img src="../assets/images/logo.png" alt="Bibilia Sacco Logo" class="h-18 md:h-10 rounded" />
+      </a>
       </div>
 
       <!-- Email -->

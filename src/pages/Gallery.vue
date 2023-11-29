@@ -6,7 +6,7 @@
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
       <!-- Image 1 -->
       <div class="rounded-lg overflow-hidden shadow-lg">
-        <img src="../assets/images/agm.jpg" alt="Bibilia Sacco Office" class="w-full h-auto">
+        <img src="../assets/images/retreat.jpeg" alt="Bibilia Sacco Office" class="w-full h-auto">
         <div class="p-4">
           <p class="text-gray-800 font-bold text-lg">Bibilia Sacco Office</p>
           <p class="text-gray-600">Our main office building.</p>
