@@ -1,6 +1,6 @@
 <script setup>
-import Header from './components/Header.vue'
-import NavBar from './components/NavBar.vue'
+import NavHeaderComponent from './components/NavHeaderComponent.vue'
+
 import Footer from './components/Footer.vue'
 import CookieConsent from './components/CookieConsent.vue'
 import { ref, onMounted } from 'vue'
@@ -36,8 +36,7 @@ onMounted(() => {
 
 <template>
   <div>
-    <Header />
-    <NavBar />
+   <NavHeaderComponent />
     <router-view></router-view>
     <Footer />
 

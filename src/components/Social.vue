@@ -1,15 +1,15 @@
 <template>
-  <div class="social-media-icons z-500">
+  <div class="social-media-icons z-500 space-x-2">
     <a href="#" class="social-icon bg-blue-500" target="_blank">
       <i class="fab fa-facebook"></i>
     </a>
-    <a href="https://wa.me/254799463307" class="social-icon bg-blue-500" target="_blank">
+    <a href="https://wa.me/254115643375" class="social-icon bg-blue-500" target="_blank">
       <i class="fab fa-whatsapp"></i>
     </a>
     <a href="#" class="social-icon bg-blue-500" target="_blank">
       <i class="fab fa-twitter"></i>
     </a>
-    <a href="#" class="social-icon bg-blue-500" target="_blank">
+   <a href="https://instagram.com/biblia_nwdt_sacco?utm_source=qr&igshid=OGIxMTE0OTdkZA==" class="social-icon bg-blue-500" target="_blank">
       <i class="fab fa-instagram"></i>
     </a>
   </div>
@@ -17,12 +17,7 @@
 
 <style scoped>
 .social-media-icons {
-  position: fixed;
-  left: 20px;
-  top: 50%;
-  transform: translateY(-50%);
   display: flex;
-  flex-direction: column;
   align-items: center;
  
 }

@@ -1,8 +1,7 @@
 <template>
   <div>
-  <Carousel />
+<Carousel />
   <QuickLinks />
-  <Social />
   <Cards />
    <div class="flex flex-col md:flex-row">
     <Partners class="w-full md:w-3/5" /> <!-- 60% width -->
@@ -13,8 +12,8 @@
 </template>
 
 <script setup>
-import ChartBot from "../components/ChartBot.vue"
-import Social from "../components/Social.vue"
+import ChartBot from "../components/ChartBot.vue";
+
 import QuickLinks from "./QuickLinks.vue";
 import Cards from "./Cards.vue"
 import Partners from "./Partners.vue"

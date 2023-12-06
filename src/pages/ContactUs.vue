@@ -15,6 +15,11 @@
       <div class="contact-form bg-white rounded-lg shadow-lg p-4">
         <h2 class="text-2xl font-semibold mb-4">Get in Touch</h2>
 
+
+
+
+
+
         <form>
           <div class="mb-4">
             <label class="block text-gray-700 font-semibold" for="name">
@@ -69,6 +74,13 @@
             <i class="fas fa-paper-plane mr-2"></i>Send Message
           </button>
         </form>
+
+
+
+
+
+
+        
       </div>
 
       <!-- Contact Information -->

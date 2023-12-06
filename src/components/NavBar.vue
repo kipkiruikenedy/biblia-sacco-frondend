@@ -1,6 +1,6 @@
 <template>
   <div class="hidden md:block">
-    <nav class="bg-black py-2 sticky top-0 z-1000 hover:z-50">
+    <nav class="bg-black py-2 sticky top-0 z-500 hover:z-1000">
       <div class="container mx-auto flex items-center justify-between">
         <div class="text-white flex space-x-4">
           <router-link to="/" class="hover:bg-blue-500 pointer-cursor px-2">Home</router-link>
@@ -92,6 +92,7 @@
           <!-- Add code for other dropdown menus -->
 
           <router-link to="/career" @click="closeMenu" class="hover:bg-blue-500">Career</router-link>
+         
           <router-link to="/contact" @click="closeMenu" class="hover:bg-blue-500">Contact Us</router-link>
              <a href="https://portal.bibliasacco.com/user/login" class="mr-4 bg-blue-500 py-1 px-1  hover:bg-blue-600 md:py-2 md:px-2 rounded-lg">Member Portal</a>
         </div>
@@ -105,7 +106,7 @@
 
 <script setup>
 import { ref } from 'vue';
-
+import Social from "../components/Social.vue"
 const showKnowMoreMenu = ref(false);
 const showProductsMenu = ref(false);
 const showGovernanceMenu = ref(false);
