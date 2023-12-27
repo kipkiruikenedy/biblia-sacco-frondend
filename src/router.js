@@ -1,5 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
+import UnitAffiliation from './pages/register/UnitAffiliation.vue'; // Replace with your actual component file path
+import IndividualMembership from './pages/register/IndividualMembership.vue'; // Replace with your actual component file path
+import GroupMembership from './pages/register/GroupMembership.vue'; 
+
 // Import your page components
 import Home from './pages/Home.vue';
 import About from './pages/About.vue';
@@ -20,6 +24,22 @@ import PrivacyPolicy from './components/PrivacyPolicy.vue';
 import CookiesPolicy from './components/CookiesPolicy.vue';
 
 const routes = [
+    {
+        path: '/unit-affiliation',
+        name: 'unitAffiliation',
+        component: UnitAffiliation,
+      },
+      {
+        path: '/individual-membership',
+        name: 'individualMembership',
+        component: IndividualMembership,
+      },
+      {
+        path: '/group-membership',
+        name: 'groupMembership',
+        component: GroupMembership,
+      },
+
     { path: '/', component: Home },
     { path: '/about', component: About },
     { path: '/membership-registration', component: MembershipRegistration },

@@ -19,6 +19,11 @@
             {{ item.text }}
           </li>
         </ol>
+        <div class="flex justify-center">
+         <router-link :to="getRegistrationLink(section.title)" class="bg-blue-500 my-4 mx-2 rounded text-white py-1 px-2 hover:bg-blue-600">
+            Register Now
+          </router-link>
+        </div>
       </div>
     </div>
   </div>
@@ -121,6 +126,21 @@ export default {
         },
         ],
     };
+  },
+   methods: {
+    getRegistrationLink(title) {
+      // Return the appropriate route based on the title
+      switch (title) {
+        case 'Unit Affiliation':
+          return { name: 'unitAffiliation' }; // Replace 'unitAffiliation' with your actual route name
+        case 'Individual Membership':
+          return { name: 'individualMembership' }; // Replace 'individualMembership' with your actual route name
+        case 'Group/Church/Chama Membership':
+          return { name: 'groupMembership' }; // Replace 'groupMembership' with your actual route name
+        default:
+          return { path: '/' }; // Default route, change as needed
+      }
+    },
   },
 };
 </script>

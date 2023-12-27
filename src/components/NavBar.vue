@@ -7,7 +7,9 @@
           <router-link to="/about" class="hover:bg-blue-500 pointer-cursor">About Us</router-link>
 
           <div class="relative group" @mouseenter="showDropdown('knowMore')" @mouseleave="hideDropdown('knowMore')">
-            <span class="hover:bg-blue-500 pointer-cursor p-3">Know More</span>
+            <span class="hover:bg-blue-500 pointer-cursor p-3">Know More
+<i class="fas fa-check mr-1"></i>
+            </span>
             <div class="absolute bg-white mt-2 p-2 space-y-2 w-40" v-show="showKnowMoreMenu" @mouseenter="showDropdown('knowMore')" @mouseleave="hideDropdown('knowMore')">
               <router-link to="/membership-registration">Membership Registration</router-link>
               <router-link to="/member-support">Member Support</router-link>
@@ -61,35 +63,34 @@
           <div class="relative group" @mouseenter="showDropdown('knowMore')" @mouseleave="hideDropdown('knowMore')">
             <span class="hover:bg-blue-500 pointer-cursor p-3">Know More</span>
             <div class="absolute bg-white mt-2 p-2 space-y-2 w-40" v-show="showKnowMoreMenu" @mouseenter="showDropdown('knowMore')" @mouseleave="hideDropdown('knowMore')">
-              <router-link to="/membership-registration">Membership Registration</router-link>
-              <router-link to="/member-support">Member Support</router-link>
-              <router-link to="/downloads">Downloads</router-link>
-              <router-link to="/gallery">Gallery</router-link>
-              <router-link to="/faqs">FAQs</router-link>
+              <router-link to="/membership-registration" @click="closeMenu">Membership Registration</router-link>
+              <router-link to="/member-support" @click="closeMenu">Member Support</router-link>
+              <router-link to="/downloads" @click="closeMenu">Downloads</router-link>
+              <router-link to="/gallery" @click="closeMenu">Gallery</router-link>
+              <router-link to="/faqs" @click="closeMenu">FAQs</router-link>
             </div>
           </div>
 
           <!-- Products dropdown -->
-          <div class="relative group" @mouseenter="showDropdown('products')" @mouseleave="hideDropdown('products')">
+          <div class="relative group " @mouseenter="showDropdown('products')" @mouseleave="hideDropdown('products')">
             <span class="hover:bg-blue-500 pointer-cursor p-3">Products</span>
-            <div class="absolute bg-white mt-2 p-2 space-y-2 w-40" v-show="showProductsMenu" @mouseenter="showDropdown('products')" @mouseleave="hideDropdown('products')">
-              <router-link to="/loan">Loan</router-link>
-              <router-link to="/savings">Savings</router-link>
-              <router-link to="/housing-scheme">Housing Scheme</router-link>
+            <div class="absolute bg-red-500 mt-2 p-2 space-y-2 w-40" v-show="showProductsMenu" @mouseenter="showDropdown('products')" @mouseleave="hideDropdown('products')">
+              <router-link to="/loan" @click="closeMenu">Loan</router-link>
+              <router-link to="/savings" @click="closeMenu">Savings</router-link>
+              <router-link to="/housing-scheme" @click="closeMenu">Housing Scheme</router-link>
             </div>
           </div>
 
           <!-- Governance dropdown -->
           <div class="relative group" @mouseenter="showDropdown('governance')" @mouseleave="hideDropdown('governance')">
-            <span class="hover:bg-blue-500 pointer-cursor p-3">Governance</span>
+            <span class="hover:bg-blue-500 pointer-cursor p-3" @click="closeMenu">Governance</span>
             <div class="absolute bg-white mt-2 p-2 space-y-2 w-40" v-show="showGovernanceMenu" @mouseenter="showDropdown('governance')" @mouseleave="hideDropdown('governance')">
-              <router-link to="/organization-structure">Organization Structure</router-link>
-              <router-link to="/agm">AGM</router-link>
+             <router-link to="/organization-structure" @click="closeMenu">Organization Structure</router-link>
+              <router-link to="/agm" @click="closeMenu">AGM</router-link>
             </div>
           </div>
 
-          <!-- Other menu items -->
-          <!-- Add code for other dropdown menus -->
+
 
           <router-link to="/career" @click="closeMenu" class="hover:bg-blue-500">Career</router-link>
          

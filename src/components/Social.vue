@@ -1,5 +1,5 @@
 <template>
-  <div class="social-media-icons z-500 space-x-2">
+  <div class="social-media-icons flex justify-center z-500 space-x-2">
     <a href="#" class="social-icon bg-blue-500" target="_blank">
       <i class="fab fa-facebook"></i>
     </a>
@@ -28,7 +28,6 @@
   margin-bottom: 10px;
   padding: 10px;
   border-radius: 50%;
-  text-align: center;
   text-decoration: none;
   transition: background-color 0.3s, transform 0.3s;
 }

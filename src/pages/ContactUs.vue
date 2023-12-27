@@ -1,13 +1,12 @@
 <template>
   <div class="contact-page bg-gray-100 text-gray-800 p-6">
-     <div class="relative">
+    <div class="relative">
       <img
         src="../assets/images/agm.jpg"
         alt="Contact Us"
         class="w-full h-64 object-cover rounded-lg shadow-lg"
       />
       <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50 rounded-lg"></div>
-
     </div>
 
     <div class="contact-layout grid grid-cols-1 md:grid-cols-2 gap-4 mt-8 p-4">
@@ -15,12 +14,7 @@
       <div class="contact-form bg-white rounded-lg shadow-lg p-4">
         <h2 class="text-2xl font-semibold mb-4">Get in Touch</h2>
 
-
-
-
-
-
-        <form>
+        <form @submit.prevent="submitForm">
           <div class="mb-4">
             <label class="block text-gray-700 font-semibold" for="name">
               <i class="fas fa-user text-blue-500 mr-2"></i>Name*
@@ -29,7 +23,9 @@
               type="text"
               id="name"
               class="w-full p-2 border rounded-lg"
+              v-model="name"
               placeholder="Full Name"
+              required
             />
           </div>
 
@@ -41,19 +37,23 @@
               type="email"
               id="email"
               class="w-full p-2 border rounded-lg"
+              v-model="email"
               placeholder="Email"
+              required
             />
           </div>
 
           <div class="mb-4">
-           <label class="block text-gray-700 font-semibold" for="subject">
+            <label class="block text-gray-700 font-semibold" for="subject">
               <i class="fas fa-pen text-blue-500 mr-2"></i>Subject*
             </label>
             <input
               type="text"
               id="subject"
               class="w-full p-2 border rounded-lg"
+              v-model="subject"
               placeholder="Subject"
+              required
             />
           </div>
 
@@ -64,26 +64,20 @@
             <textarea
               id="message"
               class="w-full p-2 border rounded-lg h-32"
+              v-model="message"
               placeholder="Your message..."
+              required
             ></textarea>
           </div>
-
-          <button
-            class="bg-blue-500 text-white px-4 py-2 rounded hover-bg-blue-700 transition duration-300"
-          >
-            <i class="fas fa-paper-plane mr-2"></i>Send Message
-          </button>
+ <input
+        type="submit"
+        value="Send Message"
+        class="bg-blue-500 text-white px-4 py-2 rounded hover-bg-blue-700 transition duration-300"
+      />
         </form>
-
-
-
-
-
-
-        
       </div>
 
-      <!-- Contact Information -->
+       <!-- Contact Information -->
       <div class="contact-info bg-white rounded-lg shadow-lg p-4">
         <h2 class="text-2xl font-semibold mb-4">Contact Information</h2>
         <p>
@@ -123,4 +117,5 @@
     </div>
   </div>
 </template>
+
 

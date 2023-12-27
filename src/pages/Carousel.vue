@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center justify-center h-screen">
+  <div class="flex items-center justify-center">
     <div class="image-slider relative h-90vh w-100vw overflow-hidden">
       <div class="slider-text absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white p-8 z-10 bg-black bg-opacity-30">
         <span class="font-normal text-sm md:font-bold md:text-5xl mb-4">SAVE | BORROW | INVEST</span>
