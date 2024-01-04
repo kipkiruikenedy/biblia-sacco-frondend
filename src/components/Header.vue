@@ -4,7 +4,7 @@
       <!-- Logo or Site Name (Add your own logo or site name here) -->
     <div class="flex justify-center  p-2">
       <a href="/">
-        <img src="../assets/images/log.jpg" alt="Bibilia Sacco Logo" class="w-10 rounded text-center" />
+        <img src="../images/log.jpg" alt="Bibilia Sacco Logo" class="w-10 rounded text-center" />
       </a>
     </div>
       <!-- Contact Information -->

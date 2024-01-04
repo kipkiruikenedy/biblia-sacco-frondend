@@ -5,6 +5,8 @@ import "./style.css";
 import VueSplide from '@splidejs/vue-splide';
 
 
+
+
 const app = createApp(App);
 
 app.use(router); // Use Vue Router

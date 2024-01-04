@@ -6,7 +6,10 @@
   <p class="text-2xl">Apply for individual membership Now !</p>
   </div>
       
-
+<div class="mb-4 text-center">
+  <label class="block text-sm font-medium text-gray-600">Download Membership Form (PDF) here<span class="text-red-700 font-semibold">*</span></label>
+  <a href="../membership_form.pdf" download="Membership_Form.pdf" class="text-blue-500 underline pointer-cursor">Download Membership Form</a>
+</div>
       <p class="text-gray-600 mb-6">
         Apply for individual membership by providing the following information:
       </p>
@@ -87,6 +90,7 @@ export default {
       formData.append('kraPinCopy', this.kraPinCopy);
 
       axios.post(`http://localhost:8000/api/individual-membership-registration`, formData, {
+        withCredentials: true,
         headers: { 
           'Content-Type': 'multipart/form-data' 
         },

@@ -2,7 +2,7 @@
   <div class="contact-page bg-gray-100 text-gray-800 p-6">
     <div class="relative">
       <img
-        src="../assets/images/agm.jpg"
+        src="../images/agm.jpg"
         alt="Contact Us"
         class="w-full h-64 object-cover rounded-lg shadow-lg"
       />

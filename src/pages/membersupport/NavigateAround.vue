@@ -26,7 +26,7 @@
 
       <div class="image-container">
         <!-- Add your navigation image here -->
-        <img src="../../assets/images/navigate.jpg" alt="Navigate" class="w-full h-auto rounded-lg shadow-lg">
+        <img src="../../images/navigate.jpg" alt="Navigate" class="w-full h-auto rounded-lg shadow-lg">
       </div>
     </div>
   </div>

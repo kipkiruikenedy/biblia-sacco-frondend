@@ -2,7 +2,7 @@
   <div class="bg-white text-gray-800 p-6 rounded-lg shadow-xl">
     <!-- About Us -->
 <section class="flex flex-col md:flex-row items-center justify-center mb-8">
-  <img src="../assets/images/about.jpg" alt="About Us" class="md:h-64 object-cover rounded-lg mb-4 md:mr-8">
+  <img src="../images/about.jpg" alt="About Us" class="md:h-64 object-cover rounded-lg mb-4 md:mr-8">
 
   <div class="max-w-md md:max-w-lg p-6 bg-gray-100 rounded-lg shadow-md">
     <h2 class="text-3xl font-bold mb-4 text-gray-800 text-center">Who We Are</h2>
@@ -19,7 +19,7 @@
 <!-- Our Mission and Vision -->
 <section class="flex flex-col md:flex-row bg-gray-100 rounded-lg shadow-md mb-8 p-6">
   <div class="md:w-1/2 mb-4 md:mb-0 p-3">
-    <img src="../assets/images/mission.jpg" alt="Our Mission" class="w-full h-64 object-cover rounded-lg mb-4">
+    <img src="../images/mission.jpg" alt="Our Mission" class="w-full h-64 object-cover rounded-lg mb-4">
     <div class="text-center">
       <h2 class="text-2xl font-bold mb-2 text-gray-800">Our Mission</h2>
       <p class="text-base text-gray-600 leading-relaxed">
@@ -29,7 +29,7 @@
   </div>
 
   <div class="md:w-1/2 p-3">
-    <img src="../assets/images/vision.jpg" alt="Our Vision" class="w-full h-64 object-cover rounded-lg mb-4">
+    <img src="../images/vision.jpg" alt="Our Vision" class="w-full h-64 object-cover rounded-lg mb-4">
     <div class="text-center">
       <h2 class="text-2xl font-bold mb-2 text-gray-800">Our Vision</h2>
       <p class="text-base text-gray-600 leading-relaxed">
@@ -95,7 +95,7 @@
      <!-- Why Join Us -->
     <section class="p-6 bg-gray-100 rounded-lg shadow-md flex flex-col md:flex-row items-center">
       <div class="max-w-md md:max-w-lg mb-4 md:mb-0 md:mr-8">
-        <img src="../assets/images/join.jpg" alt="Why Join Us" class="w-full h-64 object-cover rounded-lg mb-4">
+        <img src="../images/join.jpg" alt="Why Join Us" class="w-full h-64 object-cover rounded-lg mb-4">
         <h2 class="text-3xl font-bold mb-2 text-gray-800">Why Join Us</h2>
         <ul class="list-disc list-inside text-base mb-4">
           <li>Fast Loan Processing.</li>
@@ -113,7 +113,7 @@
   <!-- Core Values -->
     <section class="p-6 bg-gray-100 rounded-lg shadow-md ">
       <div class="mb-4">
-        <img src="../assets/images/values.jpg" alt="Core Values" class=" object-contain rounded-full mx-auto mb-2">
+        <img src="../images/values.jpg" alt="Core Values" class=" object-contain rounded-full mx-auto mb-2">
         <h2 class="text-3xl font-bold text-gray-800">Core Values</h2>
       </div>
       <ul class="list-disc list-inside text-base mb-4">

@@ -3,7 +3,7 @@
     <div class="relative mb-8">
     
       <img
-        src="../assets/images/hiring.jpg"
+        src="../images/hiring.jpg"
         alt="Biblia Sacco Society Limited Hiring Banner"
         class="object-cover w-full h-64 rounded-lg shadow-lg"
       />

@@ -1,6 +1,6 @@
 <template>
   <div class="hidden md:flex">
-    <img src="../assets/images/org.PNG" alt="Your Image Alt Text">
+    <img src="../images/org.PNG" alt="Your Image Alt Text">
     <!-- Your page content goes here -->
   </div>
 
@@ -11,7 +11,7 @@
   <p>For better experience </p>
   </div>
 
- <img src="../assets/images/catoona.jpeg" alt="Your Image Alt Text">
+ <img src="../images/catoona.jpeg" alt="Your Image Alt Text">
   </div>
 </template>
 

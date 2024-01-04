@@ -4,19 +4,19 @@
     <Splide :options="sliderOptions" aria-label="My Favorite Images">
       <SplideSlide>
         <div class="splide1">
-          <img src="../assets/images/cooperative ministry.png" alt="Sample 1">
-        <img src="../assets/images/KRA.png" alt="Sample 2">
-        <img src="../assets/images/nssf.png" alt="Sample 3">
-        <img src="../assets/images/NHIF.png" alt="Sample 4">
+          <img src="../images/cooperative ministry.png" alt="Sample 1">
+        <img src="../images/KRA.png" alt="Sample 2">
+        <img src="../images/nssf.png" alt="Sample 3">
+        <img src="../images/NHIF.png" alt="Sample 4">
       </div>
         
       </SplideSlide>
       <SplideSlide>
         <div class="splide1">
-        <img src="../assets/images/cooperative ministry.png" alt="Sample 2">
-        <img src="../assets/images/nssf.png" alt="Sample 3">
-        <img src="../assets/images/NHIF.png" alt="Sample 4">
-        <img src="../assets/images/KRA.png" alt="Sample 2">
+        <img src="../images/cooperative ministry.png" alt="Sample 2">
+        <img src="../images/nssf.png" alt="NSSF">
+        <img src="../images/NHIF.png" alt="NHIF">
+        <img src="../images/KRA.png" alt="KRA">
         </div>
       </SplideSlide>
     </Splide>

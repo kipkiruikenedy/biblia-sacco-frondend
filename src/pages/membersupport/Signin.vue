@@ -25,7 +25,7 @@
 
     <!-- Image Section -->
     <div class="lg:w-1/2 lg:pl-8 lg:mt-0 mt-8">
-      <img src="../../assets/images/signin.jpg" alt="Member Portal" class="w-full max-w-md rounded-md shadow-lg lg:float-right"/>
+      <img src="../../images/signin.jpg" alt="Member Portal" class="w-full max-w-md rounded-md shadow-lg lg:float-right"/>
     </div>
   </div>
 </template>

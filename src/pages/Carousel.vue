@@ -10,17 +10,17 @@
       <Splide :options="sliderOptions" aria-label="Image Slider">
         <SplideSlide>
           <div class="aspect-w-16 aspect-h-9">
-            <img src="../assets/images/reception.jpg" alt="Reception" class="object-cover w-full h-full">
+            <img src="../images/reception.jpg" alt="Reception" class="object-cover w-full h-full">
           </div>
         </SplideSlide>
         <SplideSlide>
           <div class="aspect-w-16 aspect-h-9">
-            <img src="../assets/images/reception.jpg" alt="AGM" class="object-cover w-full h-full">
+            <img src="../images/reception.jpg" alt="AGM" class="object-cover w-full h-full">
           </div>
         </SplideSlide>
         <SplideSlide>
           <div class="aspect-w-16 aspect-h-9">
-            <img src="../assets/images/reception.jpg" alt="Members" class="object-cover w-full h-full">
+            <img src="../images/reception.jpg" alt="Members" class="object-cover w-full h-full">
           </div>
         </SplideSlide>
       </Splide>

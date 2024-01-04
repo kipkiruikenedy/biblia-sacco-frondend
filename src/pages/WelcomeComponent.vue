@@ -2,7 +2,7 @@
   <div class="welcome-container">
     <div class="container mx-auto flex flex-wrap items-center p-8 rounded-lg bg-white shadow-lg">
       <div class="w-full md:w-1/2 mb-4">
-        <img src="../assets/images/agm.jpg" alt="Image Description" class="max-w-full h-auto mx-auto" />
+        <img src="../images/agm.jpg" alt="Image Description" class="max-w-full h-auto mx-auto" />
       </div>
       <div class="w-full md:w-1/2 mb-4 p-5">
         <div class="text-4xl text-gray-800 mb-4">

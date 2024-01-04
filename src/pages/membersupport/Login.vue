@@ -3,7 +3,7 @@
     <div class="member-portal flex flex-col-reverse md:flex-row bg-white rounded-lg shadow-lg overflow-hidden">
       <div class="image-container md:w-1/2">
         <!-- Add your login image here -->
-        <img src="../../assets/images/login.jpg" alt="Login" class="w-full h-auto md:h-full object-cover">
+        <img src="../../images/login.jpg" alt="Login" class="w-full h-auto md:h-full object-cover">
       </div>
 
       <div class="content p-4 md:w-1/2">

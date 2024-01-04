@@ -2,7 +2,7 @@
   <div>
     <!-- Header Section with Background Image -->
     <div class="relative h-60">
-      <img class="w-full h-full object-cover" src="../assets/images/agm.jpg" alt="Header Background Image" />
+      <img class="w-full h-full object-cover" src="../images/agm.jpg" alt="Header Background Image" />
       <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white">
         <h2 class="text-4xl font-extrabold">Loan Services</h2>
       </div>

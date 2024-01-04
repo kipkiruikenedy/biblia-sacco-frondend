@@ -3,7 +3,7 @@
     <div class="member-portal">
       <div class="image-container">
         <!-- Add your M-Pesa payment image here -->
-        <img src="../../assets/images/mpesa.svg" alt="Make Payments via M-Pesa" class="w-full h-auto rounded-lg shadow-lg p-6">
+        <img src="../../images/mpesa.svg" alt="Make Payments via M-Pesa" class="w-full h-auto rounded-lg shadow-lg p-6">
       </div>
 
       <div class="content p-6">
