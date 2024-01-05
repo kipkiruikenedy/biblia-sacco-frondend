@@ -1,11 +1,12 @@
 <template>
-  <div class="hiring-page bg-gray-100 text-gray-800 p-6 z-50">
-    <div class="relative mb-8">
+  <div class=" hiring-page bg-gray-100 text-gray-800 p-6 ">
+    <div class="relative mb-8 hiring">
     
       <img
+       class="object-cover w-full h-64 rounded-lg shadow-lg "
         src="../images/hiring.jpg"
         alt="Biblia Sacco Society Limited Hiring Banner"
-        class="object-cover w-full h-64 rounded-lg shadow-lg z-10"
+       
       />
       <div class="absolute top-0 left-0 w-full h-full bg-black opacity-40 rounded-lg"></div>
     </div>
@@ -53,3 +54,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.hiring{
+  z-index:0;
+}
+</style>

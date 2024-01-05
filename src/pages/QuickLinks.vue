@@ -22,7 +22,7 @@
           </div>
           <p class="text-xl font-semibold text-black">Housing</p>
         </router-link>
-        <router-link to="/member-registration" class="quick-link-item hover:bg-gray-200 p-4 rounded-md text-center transition duration-300 transform hover:scale-105">
+        <router-link to="membership-registration" class="quick-link-item hover:bg-gray-200 p-4 rounded-md text-center transition duration-300 transform hover:scale-105">
           <div class="icon-container bg-blue-500 rounded-full p-1">
             <i class="fas fa-clipboard-check text-white text-xl"></i>
           </div>
