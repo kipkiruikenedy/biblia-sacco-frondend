@@ -365,7 +365,17 @@
 </template>
 
 <script setup>
-// Add any logic or data properties if needed
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
+
+const leavePrivacyPolicy = () => {
+  // Add any logic you need before leaving the privacy policy page
+  // ...
+
+  // Navigate to a different route (e.g., home) to trigger the route change
+  router.push('/');
+};
 </script>
 
 <style scoped>
