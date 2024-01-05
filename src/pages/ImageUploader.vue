@@ -7,6 +7,7 @@
 </template>
 
 <script>
+import axios from 'axios';
 export default {
   data() {
     return {
@@ -25,14 +26,14 @@ export default {
 
       const formData = new FormData();
 
-      // Append each selected file to the FormData
+      // Append each selected file to the FormData with the correct field name
       for (let i = 0; i < this.selectedFiles.length; i++) {
-        formData.append('images[]', this.selectedFiles[i]);
+        formData.append('file', this.selectedFiles[i]);
       }
 
       try {
         // Use Axios or Fetch to make API call to Laravel backend
-        const response = await axios.post('/api/galary', formData, {
+        const response = await axios.post('http://localhost:8000/api/gallery', formData, {
           headers: {
             'Content-Type': 'multipart/form-data',
           },
@@ -42,6 +43,8 @@ export default {
         console.error(error);
       }
     },
+
+
   },
 };
 </script>

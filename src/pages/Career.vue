@@ -1,62 +1,96 @@
 <template>
-  <div class=" hiring-page bg-gray-100 text-gray-800 p-6 ">
-    <div class="relative mb-8 hiring">
-    
-      <img
-       class="object-cover w-full h-64 rounded-lg shadow-lg "
-        src="../images/hiring.jpg"
-        alt="Biblia Sacco Society Limited Hiring Banner"
-       
-      />
-      <div class="absolute top-0 left-0 w-full h-full bg-black opacity-40 rounded-lg"></div>
-    </div>
+  <div class="min-h-screen bg-gray-100 p-4">
+    <h2 class="text-3xl font-semibold mb-6 text-center">Latest Job Vacancies</h2>
 
-    <div class="about-sacco text-lg text-center mb-8">
+    <!-- Additional Content -->
+    <div class="mt-8 text-gray-700">
       <p>
-        Biblia Sacco Society Limited is a <em>Savings & Credit Society</em> based in Nairobi. It has been in existence for more than 40 years. With over 10,000 members, it draws its membership from Christian Organizations such as NGOs, Schools, Colleges, Universities, Churches, Christian Individuals, and Groups in Kenya.
+        Biblia Sacco Society Limited is a Savings & Credit Society based in Nairobi. With over 10,000 members, it draws its membership from Christian Organizations such as NGOs, Schools, Colleges, Universities, Churches, Christian Individuals, and Groups in Kenya.
       </p>
-      <p class="mt-4">
+
+      <p>
         At Biblia Sacco, we believe in equality of job distribution all over the country and always look for qualified individuals for any job posting. Only qualified individuals are required to apply.
       </p>
+
+      <h3 class="text-2xl font-semibold mt-4">Latest Vacancies</h3>
+    </div>
+      <p>
+        Here are the latest job vacancies available for application. You can download the job details by clicking on the "Open PDF" link.
+
+      </p>
+    <p>
+      <p>
+All Applications are send before specified deadline
+      </p>
+    </p>
+
+
+    <!-- Display Job Vacancies here -->
+    <div v-if="pdfs.length > 0" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div v-for="pdf in pdfs" :key="pdf.filename">
+        <div class="border rounded-md shadow-md mb-4 p-4 transition duration-300 transform hover:scale-105">
+          <!-- Display PDF name without extension -->
+          <p class="text-lg font-semibold mb-2 text-center">{{ pdf.title }}</p>
+
+          <!-- Display other job details if available -->
+          <p v-if="pdf.description" class="mb-2">{{ pdf.description }}</p>
+          <p v-if="pdf.posted_at" class="text-gray-600 mb-2">Posted on: {{ pdf.posted_at }}</p>
+
+          <!-- Open PDF in a new page -->
+          <a :href="getPdfUrl(pdf.filename)" target="_blank" class="flex items-center justify-center text-blue-500 cursor-pointer">
+            <i class="fas fa-file-pdf mr-2"></i> Open PDF
+          </a>
+        </div>
+      </div>
     </div>
 
-    <section class="latest-vacancies">
-      <h2 class="text-2xl font-semibold mb-4 text-center">Latest Vacancies</h2>
+    <div v-else class="text-center text-gray-600">No job vacancies available.</div>
 
-      <!-- Job Listings -->
-      <div v-for="job in jobs" :key="job.id" class="job-listing bg-white text-gray-700 p-4 rounded-lg shadow-lg mb-6">
-        <div class="flex items-center justify-between mb-2">
-          <h3 class="text-xl font-semibold">{{ job.title }}</h3>
-          <div class="flex items-center">
-            <i class="fas fa-map-marker-alt text-gray-600"></i>
-            <span class="ml-2">{{ job.location }}</span>
-          </div>
-        </div>
-        <p class="mb-2">Posted: {{ job.postedDate }}</p>
-        <button class="apply-button bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-300">
-          Apply Now
-        </button>
-      </div>
-    </section>
+
   </div>
 </template>
 
 <script>
+import axios from 'axios';
+
 export default {
   data() {
     return {
-      jobs: [
-        { id: 1, title: 'Job Title 1', location: 'Nairobi', postedDate: 'Date 1' },
-        { id: 2, title: 'Job Title 2', location: 'Nairobi', postedDate: 'Date 2' },
-        { id: 3, title: 'Job Title 3', location: 'Nairobi', postedDate: 'Date 3' },
-      ],
+      pdfs: [], // Store the fetched PDFs here
     };
+  },
+  mounted() {
+    // Fetch PDFs from the Laravel backend
+    this.fetchPDFs();
+  },
+  methods: {
+    async fetchPDFs() {
+      try {
+        // Replace '/api/gallery/pdfs' with the actual endpoint for fetching PDFs
+        const response = await axios.get('http://localhost:8000/api/jobs');
+        console.log(response.data);
+
+        // Check if the "jobs" array is not empty before updating the data
+        if (response.data.jobs && response.data.jobs.length > 0) {
+          // Adjust the assignment based on your backend response structure
+          this.pdfs = response.data.jobs;
+        }
+      } catch (error) {
+        console.error(error);
+      }
+    },
+    getPdfUrl(filename) {
+      // Assuming your Laravel application is running at http://localhost:8000
+      return `http://localhost:8000/jobs/${filename}`;
+    },
+    redirectToApplyPage() {
+      // Redirect to the apply page
+      this.$router.push('/job/application');
+    },
   },
 };
 </script>
 
-<style scoped>
-.hiring{
-  z-index:0;
-}
+<style>
+/* You can further customize the styling based on your design preferences */
 </style>

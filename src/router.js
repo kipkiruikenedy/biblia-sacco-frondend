@@ -24,6 +24,8 @@ import PrivacyPolicy from './components/PrivacyPolicy.vue';
 import CookiesPolicy from './components/CookiesPolicy.vue';
 
 import Files from './pages/Files.vue';
+import JobApply from './pages/JobApply.vue';
+
 
 const routes = [
     {
@@ -62,7 +64,7 @@ const routes = [
     { path: '/cookies-policy', component: CookiesPolicy },
 
     { path: '/files', component: Files },
-
+    { path: '/job/application', component: JobApply },
     ];
 
 const router = createRouter({

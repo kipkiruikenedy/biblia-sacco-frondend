@@ -7,6 +7,7 @@
 </template>
 
 <script>
+import axios from 'axios';
 export default {
   data() {
     return {
@@ -19,11 +20,11 @@ export default {
     },
     async uploadJob() {
       const formData = new FormData();
-      formData.append('job', this.selectedFile);
+      formData.append('file', this.selectedFile);
 
       try {
         // Use Axios or Fetch to make API call to Laravel backend
-        const response = await axios.post('/api/jobs', formData, {
+        const response = await axios.post('http://localhost:8000/api/jobs', formData, {
           headers: {
             'Content-Type': 'multipart/form-data',
           },

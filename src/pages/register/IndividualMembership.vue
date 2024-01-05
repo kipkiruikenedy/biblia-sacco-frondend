@@ -5,7 +5,7 @@
   <h1 class="text-3xl">Individual Membership</h1>
   <p class="text-2xl">Apply for individual membership Now !</p>
   </div>
-      
+
 <div class="mb-4 text-center">
   <label class="block text-sm font-medium text-gray-600">Download Membership Form (PDF) here<span class="text-red-700 font-semibold">*</span></label>
   <a href="../membership_form.pdf" download="Membership_Form.pdf" class="text-blue-500 underline pointer-cursor">Download Membership Form</a>
@@ -19,25 +19,25 @@
         <label class="block text-sm font-medium text-gray-600">Membership Form<span class="text-red-700 font-semibold">*</span></label>
         <input type="file" ref="membershipFormInput" accept=".pdf" @change="handleFileUpload('membershipForm', $event)" class="mt-1 p-2 border rounded-md w-full required">
       </div>
-      
+
       <!-- File input for Passport Photo -->
       <div class="mb-4">
         <label class="block text-sm font-medium text-gray-600">Passport Photo<span class="text-red-700 font-semibold">*</span></label>
         <input type="file" ref="passportPhotoInput" accept="image/*,.pdf" @change="handleFileUpload('passportPhoto', $event)" class="mt-1 p-2 border rounded-md w-full required">
       </div>
-      
+
       <!-- File input for ID Copy -->
       <div class="mb-4">
         <label class="block text-sm font-medium text-gray-600">ID Copy<span class="text-red-700 font-semibold">*</span></label>
         <input type="file" ref="idCopyInput" accept=".pdf" @change="handleFileUpload('idCopy', $event)" class="mt-1 p-2 border rounded-md w-full required">
       </div>
-      
+
       <!-- File input for KRA Pin Copy -->
       <div class="mb-4">
         <label class="block text-sm font-medium text-gray-600">KRA Pin Copy<span class="text-red-700 font-semibold">*</span></label>
         <input type="file" ref="kraPinCopyInput" accept=".pdf" @change="handleFileUpload('kraPinCopy', $event)" class="mt-1 p-2 border rounded-md w-full required">
       </div>
-      
+
       <div class="mt-8">
         <button v-on:click="submitFiles()" class="bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600 focus:outline-none focus:shadow-outline-blue active:bg-blue-800 w-full">
           Submit
@@ -91,8 +91,8 @@ export default {
 
       axios.post(`http://localhost:8000/api/individual-membership-registration`, formData, {
         withCredentials: true,
-        headers: { 
-          'Content-Type': 'multipart/form-data' 
+        headers: {
+          'Content-Type': 'multipart/form-data'
         },
         timeout: 5000
       })

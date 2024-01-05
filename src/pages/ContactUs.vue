@@ -107,15 +107,28 @@
     <!-- Map Section -->
     <div class="map mt-8 p-4">
       <iframe
-        src="https://www.google.com/maps/place/TT+BEAUTY+AND+BOUTIQUE/@-1.297552,36.787711,17z/data=!4m6!3m5!1s0x182f1129e8ea0d37:0xec47af987a91991c!8m2!3d-1.2978731!4d36.7870988!16s%2Fg%2F11l5g8l37g?hl=en&entry=ttu"
-        width="100%"
-        height="400"
-        style="border:0;"
-        allowfullscreen=""
-        loading="lazy"
-      ></iframe>
+          width="100%"
+          height="400"
+          frameborder="0"
+          scrolling="no"
+          marginheight="0"
+          marginwidth="0"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=36.7841,-1.286389,36.7981,-1.272389&marker=-1.279389%2C36.7911&layers=M">
+      </iframe>
     </div>
   </div>
 </template>
 
 
+
+<script>
+export default {
+  data() {
+    return {
+      // Biblia Sacco LTD coordinates
+      latitude: -1.279389,
+      longitude: 36.7911,
+    };
+  },
+};
+</script>
