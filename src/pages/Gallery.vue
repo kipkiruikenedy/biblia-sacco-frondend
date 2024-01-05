@@ -1,42 +1,45 @@
 <template>
-  <div class="min-h-screen bg-gray-100">
-    <div class="text-center py-8">
-      <h1 class="text-4xl font-bold text-gray-800">Bibilia Sacco Gallery</h1>
-    </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
-      <!-- Image 1 -->
-      <div class="rounded-lg overflow-hidden shadow-lg">
-        <img src="../images/retreat.jpeg" alt="Bibilia Sacco Office" class="w-full h-auto">
-        <div class="p-4">
-          <p class="text-gray-800 font-bold text-lg">Bibilia Sacco Office</p>
-          <p class="text-gray-600">Our main office building.</p>
-        </div>
+  <div class="min-h-screen bg-gray-100 p-4">
+    <h2 class="text-3xl font-semibold mb-6 text-center">Gallery</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <!-- Display images here -->
+      <div v-for="image in images" :key="image.id">
+        <img :src="getImageUrl(image.filename)" alt="Gallery Image" class="w-full h-auto rounded-md shadow-md mb-4">
       </div>
-
-      <!-- Image 2 -->
-      <div class="rounded-lg overflow-hidden shadow-lg">
-        <img src="../images/agm.jpg" alt="Bibilia Sacco Members Meeting" class="w-full h-auto">
-        <div class="p-4">
-          <p class="text-gray-800 font-bold text-lg">Members Meeting</p>
-          <p class="text-gray-600">A gathering of Bibilia Sacco members.</p>
-        </div>
-      </div>
-
-      <!-- Image 3 -->
-      <div class="rounded-lg overflow-hidden shadow-lg">
-        <img src="../images/members.png" alt="Bibilia Sacco Savings Day" class="w-full h-auto">
-        <div class="p-4">
-          <p class="text-gray-800 font-bold text-lg">Savings Day Event</p>
-          <p class="text-gray-600">Celebrating members' savings achievements.</p>
-        </div>
-      </div>
-
-      <!-- Add more images as needed -->
-
     </div>
   </div>
 </template>
 
-<style scoped>
-/* Add Tailwind CSS classes as needed */
+<script>
+export default {
+  data() {
+    return {
+      images: [], // Store the fetched images here
+    };
+  },
+  mounted() {
+    // Fetch images from the Laravel backend
+    this.fetchImages();
+  },
+  methods: {
+    async fetchImages() {
+      try {
+        // Replace '/api/galary' with the actual endpoint for fetching gallery images
+        const response = await axios.get('/api/galary');
+        this.images = response.data; // Assume the response is an array of image objects
+      } catch (error) {
+        console.error(error);
+      }
+    },
+    getImageUrl(filename) {
+      // Replace 'storage/images/' with the actual path where images are stored on the Laravel backend
+      return `/storage/images/${filename}`;
+    },
+  },
+};
+</script>
+
+<style>
+/* You can customize the styling further based on your design preferences */
 </style>

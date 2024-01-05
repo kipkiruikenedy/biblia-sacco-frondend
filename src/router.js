@@ -23,6 +23,8 @@ import ContactUs from './pages/ContactUs.vue';
 import PrivacyPolicy from './components/PrivacyPolicy.vue';
 import CookiesPolicy from './components/CookiesPolicy.vue';
 
+import Files from './pages/Files.vue';
+
 const routes = [
     {
         path: '/unit-affiliation',
@@ -58,6 +60,9 @@ const routes = [
 //    PRIVACY POLICY
     { path: '/privacy-policy', component: PrivacyPolicy },
     { path: '/cookies-policy', component: CookiesPolicy },
+
+    { path: '/files', component: Files },
+
     ];
 
 const router = createRouter({

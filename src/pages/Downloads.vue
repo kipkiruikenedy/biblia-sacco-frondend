@@ -22,7 +22,7 @@ export default {
       forms: [
         {
           title: "Member Application Form",
-          link: "/forms/member-application-form.pdf",
+          link: "/forms/Biblia-Housing-Membership-Form.pdf",
           iconClass: "fas fa-user-edit",
         },
         {

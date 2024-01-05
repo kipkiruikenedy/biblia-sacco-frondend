@@ -1,5 +1,5 @@
 <template>
-  <div class="hidden md:block">
+  <div class="hidden md:block z-1000">
     <nav class="bg-black py-2 sticky top-0 z-500 hover:z-1000">
       <div class="container mx-auto flex items-center justify-between">
         <div class="text-white flex space-x-4">
@@ -8,7 +8,8 @@
 
           <div class="relative group" @mouseenter="showDropdown('knowMore')" @mouseleave="hideDropdown('knowMore')">
             <span class="hover:bg-blue-500 pointer-cursor p-3">Know More
-<i class="fas fa-check mr-1"></i>
+<i class="fas fa-caret-down mr-1"></i>
+
             </span>
             <div class="absolute bg-white mt-2 p-2 space-y-2 w-40" v-show="showKnowMoreMenu" @mouseenter="showDropdown('knowMore')" @mouseleave="hideDropdown('knowMore')">
               <router-link to="/membership-registration">Membership Registration</router-link>
@@ -21,6 +22,7 @@
 
           <div class="relative group" @mouseenter="showDropdown('products')" @mouseleave="hideDropdown('products')">
             <span class="hover:bg-blue-500 pointer-cursor p-3">Products</span>
+            <i class="fas fa-caret-down mr-1"></i>
             <div class="absolute bg-white mt-2 p-2 space-y-2 w-40" v-show="showProductsMenu" @mouseenter="showDropdown('products')" @mouseleave="hideDropdown('products')">
               <router-link to="/loan">Loan</router-link>
               <router-link to="/savings">Savings</router-link>
@@ -30,6 +32,7 @@
 
           <div class="relative group" @mouseenter="showDropdown('governance')" @mouseleave="hideDropdown('governance')">
             <span class="hover:bg-blue-500 pointer-cursor p-3">Governance</span>
+            <i class="fas fa-caret-down mr-1"></i>
             <div class="absolute bg-white mt-2 p-2 space-y-2 w-40" v-show="showGovernanceMenu" @mouseenter="showDropdown('governance')" @mouseleave="hideDropdown('governance')">
               <router-link to="/organization-structure">Organization Structure</router-link>
               <router-link to="/agm">AGM</router-link>
@@ -61,7 +64,8 @@
 
           <!-- Know More dropdown -->
           <div class="relative group" @mouseenter="showDropdown('knowMore')" @mouseleave="hideDropdown('knowMore')">
-            <span class="hover:bg-blue-500 pointer-cursor p-3">Know More</span>
+            <span class="hover:bg-blue-500 pointer-cursor ">Know More</span>
+            <i class="fas fa-caret-down mr-1"></i>
             <div class="absolute bg-white mt-2 p-2 space-y-2 w-40" v-show="showKnowMoreMenu" @mouseenter="showDropdown('knowMore')" @mouseleave="hideDropdown('knowMore')">
               <router-link to="/membership-registration" @click="closeMenu">Membership Registration</router-link>
               <router-link to="/member-support" @click="closeMenu">Member Support</router-link>
@@ -73,7 +77,8 @@
 
           <!-- Products dropdown -->
           <div class="relative group " @mouseenter="showDropdown('products')" @mouseleave="hideDropdown('products')">
-            <span class="hover:bg-blue-500 pointer-cursor p-3">Products</span>
+            <span class="hover:bg-blue-500 pointer-cursor">Products</span>
+            <i class="fas fa-caret-down mr-1"></i>
             <div class="absolute bg-red-500 mt-2 p-2 space-y-2 w-40" v-show="showProductsMenu" @mouseenter="showDropdown('products')" @mouseleave="hideDropdown('products')">
               <router-link to="/loan" @click="closeMenu">Loan</router-link>
               <router-link to="/savings" @click="closeMenu">Savings</router-link>
@@ -82,13 +87,16 @@
           </div>
 
           <!-- Governance dropdown -->
-          <div class="relative group" @mouseenter="showDropdown('governance')" @mouseleave="hideDropdown('governance')">
-            <span class="hover:bg-blue-500 pointer-cursor p-3" @click="closeMenu">Governance</span>
-            <div class="absolute bg-white mt-2 p-2 space-y-2 w-40" v-show="showGovernanceMenu" @mouseenter="showDropdown('governance')" @mouseleave="hideDropdown('governance')">
-             <router-link to="/organization-structure" @click="closeMenu">Organization Structure</router-link>
+          <div class="relative group " @mouseenter="showDropdown('governance')" @mouseleave="hideDropdown('governance')">
+            <span class="hover:bg-blue-500 pointer-cursor">Governance</span>
+            <i class="fas fa-caret-down mr-1"></i>
+            <div class="absolute bg-red-500 mt-2 p-2 space-y-2 w-40" v-show="showGovernanceMenu" @mouseenter="showDropdown('governance')" @mouseleave="hideDropdown('governance')">
+              <router-link to="/organization-structure" @click="closeMenu">Organization Structure</router-link>
               <router-link to="/agm" @click="closeMenu">AGM</router-link>
+             
             </div>
           </div>
+
 
 
 
@@ -146,7 +154,7 @@ const closeMenu = () => {
   top: 100%;
   left: 0;
   background-color: white;
-  z-index: 10;
+   z-index: 10000;
   border: 1px solid #ccc;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
