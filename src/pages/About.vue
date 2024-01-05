@@ -131,7 +131,7 @@
 
    <section class="text-center p-8">
     <p class="text-4xl font-bold mb-6">Let's Do It Together</p>
-    <router-link to="/get-started" class="text-white">
+    <router-link to="/membership-registration" class="text-white">
       <button @click="onInvestClick" class="bg-blue-500 hover:bg-blue-600 text-xl px-8 py-4 rounded-full transition duration-300">
         Get Started <i class="fas fa-chevron-right ml-2"></i>
       </button>
@@ -145,7 +145,7 @@ export default {
     onInvestClick() {
       // Add your logic for the button click here
       // For example, you can use Vue Router to navigate to the "Get Started" page
-      this.$router.push('/get-started');
+      this.$router.push('/membership-registration');
     },
   },
 };
