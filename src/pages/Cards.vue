@@ -7,7 +7,7 @@
           <h2 class="text-xl font-semibold mb-2">Save With Us</h2>
           <p class="text-sm">Save With Us and Earn a Reputable Dividend at the End of the year.</p>
           <div class="mt-8">
-          <router-link to="/save-with-us" class="btn-read-more">Read More</router-link>
+          <router-link to="/savings" class="btn-read-more">Read More</router-link>
           </div>
 
         </div>
@@ -18,7 +18,7 @@
           <h2 class="text-xl font-semibold mb-2">Borrow Your Savings</h2>
           <p class="text-sm">Your Deposit Guarantees you to Borrow 3 times your Savings and even a top-up loan is added if the need arises.</p>
 <div class="mt-8">
-        <router-link to="/borrow-your-savings" class="btn-read-more">Read More</router-link>
+        <router-link to="/loan" class="btn-read-more">Read More</router-link>
         </div>
         </div>
       </SplideSlide>
@@ -28,7 +28,7 @@
           <h2 class="text-xl font-semibold mb-2">Invest Wisely</h2>
           <p class="text-sm">The more you Invest, the more your future brightens each day as you borrow to build yourself in the society.</p>
           <div class="mt-8">
-        <router-link to="/invest-wisely" class="btn-read-more">Read More</router-link>
+        <router-link to="/savings" class="btn-read-more">Read More</router-link>
        </div>
           </div>
       </SplideSlide>
