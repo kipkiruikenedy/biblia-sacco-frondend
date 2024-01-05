@@ -44,7 +44,7 @@ const sliderOptions = {
   @apply mx-auto relative;
   height: 90vh;
   width: 100vw;
-   z-index: 100;
+   z-index: -50;
 }
 
 .slider-text {

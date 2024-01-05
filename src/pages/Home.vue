@@ -1,5 +1,5 @@
 <template>
-  <div class="z-100">
+  <div >
 <Carousel />
   <QuickLinks />
   <Cards />

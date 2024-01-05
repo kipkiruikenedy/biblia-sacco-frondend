@@ -1,7 +1,7 @@
 <template>
   <div>
     <div v-if="showOverlay" class="overlay"></div>
-    <div v-if="showBanner" class="cookie-consent fixed bottom-0 left-0 w-full bg-gray-900 text-white p-8 text-center z-50">
+    <div v-if="showBanner" class="cookie-consent fixed top-[50vh]  w-full bg-gray-900 text-white p-8 text-center z-50">
       <p class="text-lg mb-4">
         This website uses cookies to ensure you get the best experience. By using our website, you agree to our use of cookies and privacy policy.
       </p>
