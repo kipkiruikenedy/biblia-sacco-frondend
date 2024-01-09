@@ -1,8 +1,8 @@
 <template>
   <header class=" py-4  bg-black text-white">
-    <div class="container md:mx-auto md:flex justify-between items-center">
+    <div class="container md:mx-auto md:flex justify-center items-center">
       <!-- Logo or Site Name (Add your own logo or site name here) -->
-    <div class="flex justify-center  p-2">
+    <div class="md:hidden flex justify-center  p-2">
       <a href="/">
         <img src="../images/log.jpg" alt="Bibilia Sacco Logo" class="w-10 rounded text-center" />
       </a>
@@ -29,7 +29,7 @@
       </div>
 
 
-      <Social />
+
     
     </div>
   </header>

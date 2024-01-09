@@ -1,15 +1,20 @@
 <template>
   <div class="hidden md:block z-1000">
-    <nav class="bg-black py-2 sticky top-0 z-500 hover:z-1000">
-      <div class="container mx-auto flex items-center justify-between">
-        <div class="text-white flex space-x-4">
-          <router-link to="/" class="hover:bg-blue-500 pointer-cursor px-2">Home</router-link>
-          <router-link to="/about" class="hover:bg-blue-500 pointer-cursor">About Us</router-link>
 
+    <nav class="bg-black py-2 sticky top-0 z-500 hover:z-1000 flex space-x-4">
+
+       <div class="flex justify-center  p-2 ml-4 ">
+      <a href="/">
+        <img src="../images/logo.png" alt="Bibilia Sacco Logo" class="w-[6vw] rounded text-center" />
+      </a>
+    </div>
+
+      <div class="container flex items-center justify-between ml-7">
+        <div class="text-white flex space-x-4">
+          <router-link to="/about" class="hover:bg-blue-500 pointer-cursor">About Us</router-link>
           <div class="relative group" @mouseenter="showDropdown('knowMore')" @mouseleave="hideDropdown('knowMore')">
             <span class="hover:bg-blue-500 pointer-cursor p-3">Know More
-<i class="fas fa-caret-down mr-1"></i>
-
+             <i class="fas fa-caret-down mr-1"></i>
             </span>
             <div class="absolute bg-white mt-2 p-2 space-y-2 w-40" v-show="showKnowMoreMenu" @mouseenter="showDropdown('knowMore')" @mouseleave="hideDropdown('knowMore')">
               <router-link to="/membership-registration">Membership Registration</router-link>
@@ -44,8 +49,11 @@
           <router-link to="/career" class="hover:bg-blue-500 pointer-cursor">Career</router-link>
           <router-link to="/contact" class="hover:bg-blue-500 pointer-cursor">Contact Us</router-link>
         </div>
+
+        <div>
         <a href="https://portal.bibliasacco.com/user/login" class="font-semibold mr-4 bg-blue-500 hover:bg-blue-600 py-2 px-2 rounded-lg">Member Portal</a>
-      </div>
+        </div>
+   </div>
     </nav>
   </div>
 

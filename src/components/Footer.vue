@@ -1,38 +1,45 @@
 <template>
   <footer class="footer bg-gray-800 text-white">
     <div class="container mx-auto py-8 flex flex-col md:flex-row justify-between items-center">
-      <!-- Left section with copyright -->
-      <div class="mb-4 md:mb-0 p-5">
-        <p class="text-lg">copyright &copy; {{ currentYear }} Biblia Sacco Ltd</p>
-      </div>
+      <div>whatsapp</div>
+      <nav class="flex flex-row space-x-4">
 
-      <!-- Center section with navigation links -->
-      <nav class="flex flex-wrap space-x-4">
-          <router-link to="/">Home</router-link>
+      <div class="flex flex-col">
+        <router-link to="/">Home</router-link>
         <router-link to="/about">About</router-link>
         <router-link to="/membership-registration">Membership</router-link>
         <router-link to="/member-support">Support</router-link>
         <router-link to="/downloads">Downloads</router-link>
-        <router-link to="/gallery">Gallery</router-link>
-        <router-link to="/faqs">FAQs</router-link>
-        <router-link to="/loan">Loan</router-link>
-        <router-link to="/savings">Savings</router-link>
-        <router-link to="/housing-scheme">Housing</router-link>
+
+
+
+      </div>
+       <div class="flex flex-col">
+       <router-link to="/faqs">FAQs</router-link>
+       <router-link to="/housing-scheme">Housing</router-link>
         <router-link to="/organization-structure">Organization</router-link>
         <router-link to="/agm">AGM</router-link>
         <router-link to="/career">Career</router-link>
+
+      </div>
+
+      <div class="flex flex-col">
         <router-link to="/contact">Contact</router-link>
         <router-link to="/privacy-policy">Privacy Policy</router-link>
-        
+         <router-link to="/loan">Loan</router-link>
+        <router-link to="/savings">Savings</router-link>
+         <router-link to="/gallery">Gallery</router-link>
+      </div>
+
       </nav>
 
     <!-- Right section with contact information and icons -->
-      <div class="md:text-right p-5">
+      <div class=" p-5 mr-3">
         <div class="flex flex-col items-end">
-          <p><i class="fas fa-phone"></i> Contact us:</p>
-          <p><i class="fas fa-phone"></i> +254721 393 609</p>
-          <p><i class="fas fa-phone"></i> +254111 030 700</p>
-          <p><i class="fas fa-envelope"></i> <a href="mailto:info@bibliasacco.com">info@bibliasacco.com</a></p>
+          <p class="text-center text-2xl">Contact us</p>
+          <p class="text-sm"><i class="fas fa-phone text-sm"></i> <span class="text-sm">+254721 393 609</span></p>
+          <p><i class="fas fa-phone text-sm"></i><span class="text-sm">+254111 030 700</span> </p>
+          <p><i class="fas fa-envelope text-sm"></i> <a href="mailto:info@bibliasacco.com"><span class="text-sm">info@bibliasacco.com</span></a></p>
         </div>
       </div>
       
@@ -41,6 +48,12 @@
   </a>
     </div>
   </footer>
+  <div class="w-full h-1 bg-white">
+
+  </div>
+     <div class="footer mb-4 md:mb-0 p-5 text-center bg-gray-900">
+        <p class="text-white text-2xl">copyright &copy; {{ currentYear }} Biblia Sacco Ltd</p>
+      </div>
 </template>
 
 <script>

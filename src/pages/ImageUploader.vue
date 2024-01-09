@@ -1,6 +1,11 @@
 <template>
   <div>
     <h2 class="text-2xl font-semibold mb-4">Image Uploader</h2>
+
+    <!-- Include a 'category' input field -->
+    <input v-model="category" type="text" placeholder="Category" class="mx-3 mb-4 p-2 border border-gray-300 rounded-md">
+    <input v-model="description" type="text" placeholder="Description" class="mx-3 mb-4 p-2 border border-gray-300 rounded-md">
+
     <input type="file" @change="handleFileChange" accept="image/*" multiple>
     <button @click="uploadImage" class="btn mt-4">Upload Images</button>
   </div>
@@ -8,10 +13,13 @@
 
 <script>
 import axios from 'axios';
+
 export default {
   data() {
     return {
       selectedFiles: null,
+      category: '', // Add category field
+      description: '', // Add description field
     };
   },
   methods: {
@@ -20,7 +28,7 @@ export default {
       this.selectedFiles = event.target.files;
     },
     async uploadImage() {
-      if (!this.selectedFiles) {
+      if (!this.selectedFiles || !this.category) {
         return;
       }
 
@@ -28,8 +36,12 @@ export default {
 
       // Append each selected file to the FormData with the correct field name
       for (let i = 0; i < this.selectedFiles.length; i++) {
-        formData.append('file', this.selectedFiles[i]);
+        formData.append('files[]', this.selectedFiles[i]);
       }
+
+      // Append the 'category' and 'description' fields to the FormData
+      formData.append('category', this.category);
+      formData.append('description', this.description);
 
       try {
         // Use Axios or Fetch to make API call to Laravel backend
@@ -43,8 +55,6 @@ export default {
         console.error(error);
       }
     },
-
-
   },
 };
 </script>

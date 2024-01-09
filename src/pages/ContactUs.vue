@@ -28,10 +28,23 @@
               required
             />
           </div>
+               <div class="mb-4">
+            <label class="block text-gray-700 font-semibold" for="email">
+              <i class="fas fa-envelope text-blue-500 mr-2"></i>Phone*
+            </label>
+            <input
+              type="email"
+              id="email"
+              class="w-full p-2 border rounded-lg"
+              v-model="email"
+              placeholder="0712345678"
+              required
+            />
+          </div>
 
           <div class="mb-4">
             <label class="block text-gray-700 font-semibold" for="email">
-              <i class="fas fa-envelope text-blue-500 mr-2"></i>Email*
+              <i class="fas fa-envelope text-blue-500 mr-2"></i>Email
             </label>
             <input
               type="email"
