@@ -2,6 +2,10 @@
   <footer class="footer bg-gray-800 text-white">
     <div class="container mx-auto py-8 flex flex-col md:flex-row justify-between items-center">
       <div>whatsapp</div>
+      <div class="flex flex-col">
+
+
+      <div>Quick Links</div>
       <nav class="flex flex-row space-x-4">
 
       <div class="flex flex-col">
@@ -32,6 +36,7 @@
       </div>
 
       </nav>
+        </div>
 
     <!-- Right section with contact information and icons -->
       <div class=" p-5 mr-3">
